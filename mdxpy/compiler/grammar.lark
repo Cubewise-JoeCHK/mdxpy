@@ -1,0 +1,82 @@
+start: mdx_builder
+// grammar design language : 
+// this is a grammar for MDX (Multidimensional Expressions) queries.
+
+// token
+SELECT:                 "SELECT"
+FROM:                   "FROM"
+WHERE:                  "WHERE"
+NON:                    "NON"
+EMPTY:                  "EMPTY"
+ON:                     "ON"
+ROWS:                   "ROWS" | "1"
+COLUMNS:                "COLUMNS" | "0"
+
+
+IDENTIFIER:             /[a-zA-Z0-9_ ][a-zA-Z0-9_ ]*/
+STRING:                 /[^"][^"]*/
+NUMERIC:                /[0-9]+(\.[0-9]+)?/
+
+LBRACE:                 "{"
+RBRACE:                 "}"
+LBRACKET:               "["
+RBRACKET:               "]"
+RPAREN:                 ")"
+LPAREN:                 "("
+COMMA:                  ","
+DOT:                    "."
+DOUBLE_QUOTE:            "\""
+SINGLE_QUOTE:            "\'"
+STAR:                   "*"
+PLUS:                   "+"
+
+
+// atomic elements
+name:                   LBRACKET IDENTIFIER RBRACKET
+non_empty:              NON EMPTY
+cube_source:            name
+
+dimension:              name
+hierarchy:              name
+element:                name
+attribute:              name
+
+
+// mdx builder 
+mdx_builder:            SELECT mdx_axis_row (COMMA mdx_axis_column)? FROM cube_source where? 
+                        | SELECT mdx_axis_column (COMMA mdx_axis_row)? FROM cube_source where?
+
+// mdxpy grammar: 
+mdx_axis_row:           non_empty? (LBRACE mdx_tuple RBRACE | LBRACE mdx_set RBRACE) ON (ROWS)
+mdx_axis_column:        non_empty? (LBRACE mdx_tuple RBRACE | LBRACE mdx_set RBRACE) ON (COLUMNS)
+where:                  WHERE LPAREN mdx_tuple RPAREN
+
+
+mdx_tuple:              member (COMMA member)* 
+mdx_set:                mdx_hierarchy_set | tuples_set 
+cross_join_mdx_set:     mdx_set   (STAR mdx_set)*
+tuples_set:             mdx_tuple (COMMA mdx_tuple)*
+multi_union_mdx_set:    mdx_set (PLUS mdx_set)*
+members:                member (COMMA member)*
+member:                 dimension DOT element | dimension DOT hierarchy DOT element
+current_member:         member DOT "CURRENTMEMBER"i
+
+
+// properties (not support yet)
+mdx_properties_tuple:       dimension_property
+dimension_property:         dimension DOT hierarchy DOT attribute | dimension DOT attribute
+
+
+mdx_hierarchy_set:       tm1_subset_all_hierarchy_set | all_members_hierarchy_set
+// 
+// mdxhierarchySet
+tm1_subset_all_hierarchy_set:  "TM1SubsetAll"i RPAREN dimension DOT hierarchy RPAREN
+all_members_hierarchy_set:     dimension DOT hierarchy DOT "MEMBERS"i
+
+
+
+%import common.WS
+%import common.NEWLINE
+%ignore NEWLINE
+%ignore WS
+%ignore /(\r?\n)+/
