@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[attributename],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[type],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[exists],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[scount],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[acount],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[ncount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqitemindex].[}apqitemindex],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributes]
+WHERE ([}apqdimensions].[}apqdimensions].[customer])

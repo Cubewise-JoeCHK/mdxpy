@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([month].[month],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Account].[Account].[All Accounts by Category],[Account].[Account].[资产负债表类科目],[Account].[Account].[损益表类科目],[Account].[Account].[All Accounts^6405.06.00.00]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [ysreport]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[company].[company].[a100],[mreference].[mreference].[baseperiod],[projectgb].[projectgb].[allprojectgbs],[mysreport].[mysreport].[amount],[departmentgb].[departmentgb].[alldepartmentgbs],[accountys].[accountys].[allaccountyss],[ysglftype].[ysglftype].[alltypes],[sysreport].[sysreport].[alldatasources])

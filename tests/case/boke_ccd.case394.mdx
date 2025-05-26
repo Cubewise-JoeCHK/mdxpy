@@ -1,0 +1,4 @@
+SELECT
+{TM1SUBSETALL([M GLF Sys Output Data ID].[M GLF Sys Output Data ID])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETALL([GLF Sys Output Data ID].[GLF Sys Output Data ID])} * {[Line Item].[Line Item].[0000]} * {[GLF Sys Output Data Type].[GLF Sys Output Data Type].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsysoutputdataid]

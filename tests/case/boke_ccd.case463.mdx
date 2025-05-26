@@ -1,0 +1,4 @@
+SELECT
+{TM1SUBSETTOSET([msysparameter].[msysparameter],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{DRILLUPMEMBER({DRILLUPMEMBER({DRILLUPMEMBER({[Sys Parameter].[Sys Parameter].Members}, {[Sys Parameter].[Sys Parameter].[>>>>Credentials]})}, {[Sys Parameter].[Sys Parameter].[>>>>Mail Config]})}, {[Sys Parameter].[Sys Parameter].[>>>>General Hustle Config]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [sysparameter]

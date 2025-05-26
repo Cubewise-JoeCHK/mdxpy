@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([mgbreporting].[mgbreporting],"查询明细")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([lineitem].[lineitem],"下钻查看管报序时账明细")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbreportingentry]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[02],[group].[group].[(group)a000],[company].[company].[d111],[voucherid].[voucherid].[0031],[sgbreporting].[sgbreporting].[base])

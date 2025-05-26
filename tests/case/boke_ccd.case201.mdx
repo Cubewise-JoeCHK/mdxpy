@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETALL([M Consol JE Company].[M Consol JE Company])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[S Consol JE Company].[S Consol JE Company].[EC^EC Kingdee],[S Consol JE Company].[S Consol JE Company].[ECC^ECC Kingdee]} * {[JE Line Item].[JE Line Item].[0501],[JE Line Item].[JE Line Item].[0502],[JE Line Item].[JE Line Item].[0503]} * {[JE ID].[JE ID].[0019],[JE ID].[JE ID].[0503],[JE ID].[JE ID].[0597]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoljecompany]
+WHERE ([year].[year].[2023],[month].[month].[03],[company].[company].[a100])

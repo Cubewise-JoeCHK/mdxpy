@@ -1,0 +1,5 @@
+SELECT
+TM1SubsetAll([}APQ Universal View Calculation Measure]) DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apquniversalviewmeasure].[}apquniversalviewmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apquniversalviewcalculation]
+WHERE ([}apquniversalview].[}apquniversalview].[v001],[}apquniversalviewrow].[}apquniversalviewrow].[allrows],[}apquniversalviewcolumn].[}apquniversalviewcolumn].[allcolumns])

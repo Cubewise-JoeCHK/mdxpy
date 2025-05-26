@@ -1,0 +1,4 @@
+SELECT
+NON EMPTY {[M Consol Definition System Account].[M Consol Definition System Account].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[System Account].[System Account].Members} * {TM1SUBSETTOSET([account].[account],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionsystemaccount]

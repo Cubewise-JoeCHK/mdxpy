@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqdimensionstaticsubsetsandudcmeasure].[}apqdimensionstaticsubsetsandudcmeasure],"Item Initialization")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqdimensionuseindex].[}apqdimensionuseindex],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionstaticsubsetsandudc]
+WHERE ([}apqdimensions].[}apqdimensions].[customer],[}apqdimensionnodetype].[}apqdimensionnodetype].[staticsubset],[}apqitemindex].[}apqitemindex].[totalitems])

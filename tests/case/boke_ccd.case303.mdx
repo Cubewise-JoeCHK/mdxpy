@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GB Entry Check].[M GB Entry Check].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[S GB Entry Check].[S GB Entry Check].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbentrycheckother]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[projectgb].[projectgb].[xm00120],[lineitem].[lineitem].[alllineitems],[entryidgb].[entryidgb].[gba0027])

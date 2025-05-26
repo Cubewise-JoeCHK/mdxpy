@@ -1,0 +1,5 @@
+SELECT
+{[Account Report].[Account Report].[0000],[Account Report].[Account Report].[S001]} * {[S Consol GL Group].[S Consol GL Group].[All Data Sources List^EC],[S Consol GL Group].[S Consol GL Group].[All Data Sources List^ECA],[S Consol GL Group].[S Consol GL Group].[ECT],[S Consol GL Group].[S Consol GL Group].[All Data Sources List^PC],[S Consol GL Group].[S Consol GL Group].[All Data Sources List^PCA],[S Consol GL Group].[S Consol GL Group].[PCT]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Elements")} * {TM1SUBSETTOSET([account].[account],"Transaction Rate Account")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglgroup]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[group].[group].[allgroups],[segment1].[segment1].[0000],[segment2].[segment2].[0000],[segment3].[segment3].[0000],[segment4].[segment4].[0000],[accountdisclosure].[accountdisclosure].[0000],[mconsolglgroup].[mconsolglgroup].[amount])

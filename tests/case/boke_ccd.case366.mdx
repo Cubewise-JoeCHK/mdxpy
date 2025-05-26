@@ -1,0 +1,5 @@
+SELECT
+{[S GLF RLFW Allocation Base Assumption].[S GLF RLFW Allocation Base Assumption].Members} * {[M GLF RLFW Allocation Base Assumption].[M GLF RLFW Allocation Base Assumption].[不含税额]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[GLF RLFW Account].[GLF RLFW Account].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfrlfwallocationbaseassumption]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[03],[companyselect1].[companyselect1].[a131],[glftype].[glftype].[gljylx008])

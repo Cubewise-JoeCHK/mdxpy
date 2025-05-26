@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETALL([M Consol JE Company].[M Consol JE Company])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Company].[Company].[All Companies List^A112],[Company].[Company].[All Companies List^A113],[Company].[Company].[All Companies List^A123],[Company].[Company].[All Companies List^A135],[Company].[Company].[All Companies List^A131],[Company].[Company].[All Companies List^A132],[Company].[Company].[All Companies List^A138]} * {[Month].[Month].[All MTD^01],[Month].[Month].[All MTD^02],[Month].[Month].[All MTD^03]} * {TM1SUBSETTOSET([jelineitem].[jelineitem],"All N Elements")} * {TM1SUBSETTOSET([jeid].[jeid],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoljecompany]
+WHERE ([year].[year].[2023],[sconsoljecompany].[sconsoljecompany].[eckingdee])

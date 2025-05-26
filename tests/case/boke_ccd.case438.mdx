@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF Unify Turn Over Data].[M GLF Unify Turn Over Data].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyturnoverdata]
+WHERE ([scenario].[scenario].[act],[year].[year].[2018],[month].[month].[allmtd],[}apqclients].[}apqclients].[totalapqclients],[glfdatatype].[glfdatatype].[实际],[glfoutputdatatype].[glfoutputdatatype].[手工上传],[glfturnovertype].[glfturnovertype].[发起])

@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([mconsoldefinitioncompanyreporting].[mconsoldefinitioncompanyreporting],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([account].[account],"波动分析")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitioncompanyreporting]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[periodtype].[periodtype].[current],[company].[company].[a101],[bdfx].[bdfx].[mom(%)])

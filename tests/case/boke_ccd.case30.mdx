@@ -1,0 +1,5 @@
+SELECT
+{EXCEPT({[M Consol Definition Company Reporting].[M Consol Definition Company Reporting].Members},{[M Consol Definition Company Reporting].[M Consol Definition Company Reporting].[Segment3],[M Consol Definition Company Reporting].[M Consol Definition Company Reporting].[Segment4]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([lineitem].[lineitem],"1-50")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitioncompanyreportinginput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[periodtype].[periodtype].[current],[company].[company].[a101],[bdfx].[bdfx].[mom(%)])

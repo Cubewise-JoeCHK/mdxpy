@@ -1,0 +1,4 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([mglfsysglftypemajorkeyconfig].[mglfsysglftypemajorkeyconfig],"报表显示查询")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETALL([GLF Type Major Key].[GLF Type Major Key])} * {TM1SUBSETALL([GLF Contract ID].[GLF Contract ID])} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsysglftypemajorkeyreport]

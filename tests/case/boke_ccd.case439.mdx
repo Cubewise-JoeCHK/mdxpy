@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF Unify Turn Over Data].[M GLF Unify Turn Over Data].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([glflineitementry].[glflineitementry],"All N Elements")} * {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyturnoverdatarollout]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[11],[}apqclients].[}apqclients].[admin],[glfdatatype].[glfdatatype].[实际],[glfoutputdatatype].[glfoutputdatatype].[手工上传])

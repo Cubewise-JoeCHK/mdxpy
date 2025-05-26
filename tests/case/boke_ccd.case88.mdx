@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company].[M Consol GL Company].[Amount]} * {[Company].[Company].[JE_100169],[Company].[Company].[JE_101144],[Company].[Company].[JE_100000],[Company].[Company].[JE_100101]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Account].[Account].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2019],[month].[month].[03],[periodtype].[periodtype].[ytd],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountreport].[accountreport].[0000],[accountdisclosure].[accountdisclosure].[0000],[sconsolglcompany].[sconsolglcompany].[ect],[intercompany].[intercompany].[allintercompanies])

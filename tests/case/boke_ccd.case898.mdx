@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqexecutionitemmeasure].[}apqexecutionitemmeasure],"All Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqexecutionitem].[}apqexecutionitem],"Items Used")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqprocessexecutionitem]
+WHERE ([}apqprocessparameters].[}apqprocessparameters].[totalapqprocessparameters],[}apqitemindex].[}apqitemindex].[totalitems])

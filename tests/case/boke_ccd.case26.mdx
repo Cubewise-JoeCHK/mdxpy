@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Subchart URL],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Subchart Link],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Subchart Name],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Data Source],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Select Account],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Data Type],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[JE or not],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Weight]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1FILTERBYPATTERN({[Adjust Item].[Adjust Item].Members}, "*配置*","类型")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitioncitadjustcalc]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[06],[company].[company].[0000])

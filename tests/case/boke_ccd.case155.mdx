@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([sconsolgleliminationreconciliation].[sconsolgleliminationreconciliation],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Elements")} * {TM1SUBSETTOSET([intercompanycategory].[intercompanycategory],"All N Elements")} * {TM1SUBSETTOSET([eliminationtype].[eliminationtype],"All N Elements")} * {DRILLDOWNMEMBER({[Account].[Account].[All Accounts]}, {[Account].[Account].[All Accounts]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolgleliminationreconciliation]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[currency].[currency].[lcy],[intercompany].[intercompany].[allintercompanies],[segment3].[segment3].[allsegments],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment4].[segment4].[allsegments],[mconsolgleliminationreconciliation].[mconsolgleliminationreconciliation].[amount])

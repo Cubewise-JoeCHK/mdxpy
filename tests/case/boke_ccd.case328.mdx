@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GB Reporting].[M GB Reporting].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Company].[Company].Members} * {[Voucher ID].[Voucher ID].Members} * {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} * {[S GB Reporting].[S GB Reporting].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbreportingentryfilter]
+WHERE ([}apqclients].[}apqclients].[twiggy],[scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[month].[month].[06],[group].[group].[(group)a000])

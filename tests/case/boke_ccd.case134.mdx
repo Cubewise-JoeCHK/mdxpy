@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([mconsolglcompanyentryinput].[mconsolglcompanyentryinput],"Drill to Input")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([lineitem].[lineitem],"1-200")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyentryinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[company].[company].[aa100],[entryid].[entryid].[m001],[sconsolglcompanyentryinput].[sconsolglcompanyentryinput].[eca])

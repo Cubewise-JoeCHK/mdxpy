@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Profile Account Report].[M Consol Profile Account Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{DRILLDOWNMEMBER({DRILLUPMEMBER({[Account Report].[Account Report].[All Footnotes],[Account Report].[Account Report].[R101],[Account Report].[Account Report].[R101-1],[Account Report].[Account Report].[R101-2],[Account Report].[Account Report].[All Footnotes^R102],[Account Report].[Account Report].[All Footnotes^R103],[Account Report].[Account Report].[All Footnotes^R104],[Account Report].[Account Report].[All Footnotes^R105],[Account Report].[Account Report].[All Footnotes^R106],[Account Report].[Account Report].[R107]}, {[Account Report].[Account Report].[R101]})}, {[Account Report].[Account Report].[R101]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolprofileaccountreport]
+WHERE ([updaterecord].[updaterecord].[updateinput])

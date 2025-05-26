@@ -1,0 +1,5 @@
+SELECT
+{[}apqgroups].[}apqgroups].[totalapqgroups]} * TM1SubsetAll([}APQ Security Effective Permission Measure]) DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqclients].[}apqclients],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqsecurityeffectiveclientobjectpermissions]
+WHERE ([}apqtm1objects].[}apqtm1objects].[totalapqtm1objects],[}apqtm1objecttype].[}apqtm1objecttype].[totaltm1objecttypes])

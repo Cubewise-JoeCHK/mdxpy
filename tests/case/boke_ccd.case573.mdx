@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqdimensionattributes].[}apqdimensionattributes],"Department GB")} * {TM1SUBSETTOSET([}apqdimensionattributedefinitionmeasure].[}apqdimensionattributedefinitionmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqdimensionelements].[}apqdimensionelements],"Department GB")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributedefinition]
+WHERE ([}apqdimensionhierarchies].[}apqdimensionhierarchies].[departmentgb:departmentgb])

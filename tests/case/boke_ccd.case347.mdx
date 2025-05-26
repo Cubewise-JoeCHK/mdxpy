@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([glfemployeetype].[glfemployeetype],"All N Elements")} * {TM1SUBSETTOSET([glffsfvendor].[glffsfvendor],"All N Elements")} * {[M GLF FSF Report].[M GLF FSF Report].[累计发起金额]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([companyselect2].[companyselect2],"All N Elements")} * {[S GLF FSF Report].[S GLF FSF Report].[原始值],[S GLF FSF Report].[S GLF FSF Report].[调整值]} * {TM1SUBSETTOSET([yearmonth].[yearmonth],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glffsfreport]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[01],[company].[company].[a100],[glftype].[glftype].[wbcbft002],[glfdatatype].[glfdatatype].[实际])

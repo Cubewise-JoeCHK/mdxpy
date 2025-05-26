@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglintercompanyentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[company].[company].[p03],[entryid].[entryid].[gl001],[consolintercompanytransactiontype].[consolintercompanytransactiontype].[商务招待分摊],[sconsolglcompanyentryinput].[sconsolglcompanyentryinput].[ec])

@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqdimensionattributes].[}apqdimensionattributes],"GLF Income Type")} * {TM1SUBSETTOSET([}apqdimensionattributedefinitionmeasure].[}apqdimensionattributedefinitionmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqdimensionelements].[}apqdimensionelements],"GLF Income Type")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributedefinition]
+WHERE ([}apqdimensionhierarchies].[}apqdimensionhierarchies].[glfincometype:glfincometype])

@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF FWQFT Report Input].[M GLF FWQFT Report Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glffwqftreportinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[allmtd],[glfdatatype].[glfdatatype].[实际],[glffwqftserveraccount].[glffwqftserveraccount].[所有服务器账号])

@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M YS Report].[M YS Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"YS Default")} * {DRILLUPMEMBER({[Account YS].[Account YS].Members}, {[Account YS].[Account YS].[All Account YSs]})} * {DRILLUPMEMBER({[Project GB].[Project GB].Members}, {[Project GB].[Project GB].[All Project GBs]})} * {[Department GB].[Department GB].[All Department GBs]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [ysreport]
+WHERE ([scenario].[scenario].[fc1+11],[version].[version].[wip],[year].[year].[2025],[month].[month].[02],[account].[account].[损益表类科目],[ysglftype].[ysglftype].[alltypes],[sysreport].[sysreport].[alldatasources],[mreference].[mreference].[baseperiod])

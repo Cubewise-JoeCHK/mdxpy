@@ -1,0 +1,4 @@
+SELECT
+{[M Consol Definition Report and Disclosure].[M Consol Definition Report and Disclosure].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([accountreport].[accountreport],"All N Elements")} * {TM1SUBSETTOSET([accountdisclosure].[accountdisclosure],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionreportanddisclosure]

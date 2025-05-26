@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF FSF Allocation Base].[M GLF FSF Allocation Base].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[S GLF FSF Allocation Base].[S GLF FSF Allocation Base].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glffsfallocationbase]
+WHERE ([scenario].[scenario].[act],[year].[year].[2017],[month].[month].[allmtd],[company].[company].[allcompanieslist],[companyselect2].[companyselect2].[allcompanieslist],[glfemployeetype].[glfemployeetype].[所有类型])

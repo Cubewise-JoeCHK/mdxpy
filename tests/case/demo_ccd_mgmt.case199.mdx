@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([msystimeattribute].[msystimeattribute],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([date].[date],"Sys Element Q")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [systimeattribute]
+WHERE ([timedeviation].[timedeviation].[t])

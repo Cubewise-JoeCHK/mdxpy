@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqdimensionattributes].[}apqdimensionattributes],"}APQ Applications")} * {TM1SUBSETTOSET([}apqdimensionattributedefinitionmeasure].[}apqdimensionattributedefinitionmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+TM1SubsetAll([}APQ Dimension Elements]) DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributedefinition]
+WHERE ([}apqdimensionhierarchies].[}apqdimensionhierarchies].[}apqdimensiondefaultsmeasure:}apqdimensiondefaultsmeasure])

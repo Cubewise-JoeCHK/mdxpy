@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([}apqtm1objects].[}apqtm1objects],"All Chores")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqprocesses].[}apqprocesses],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqprocesstoobjectreference]
+WHERE ([}apqtm1objecttype].[}apqtm1objecttype].[chore],[}apqprocesstoobjectreferencemeasure].[}apqprocesstoobjectreferencemeasure].[isused])

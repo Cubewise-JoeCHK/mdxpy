@@ -1,0 +1,5 @@
+SELECT
+{[Segment 2].[Segment 2].[Corporate (HK)],[Segment 2].[Segment 2].[Hong Kong Group]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[}APQ Groups].[}APQ Groups].[F:BU GROUP OWNER],[}APQ Groups].[}APQ Groups].[F:FIN CONTROLLER],[}APQ Groups].[}APQ Groups].[F:CFO]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [remarkconsolglcompanyreporting]
+WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[periodtype].[periodtype].[current],[company].[company].[allcompanieslist],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[account].[account].[allaccounts],[accountreport].[accountreport].[(mgmtrpt)operatingprofit/(loss)beforetax&dividends(core)],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsolglcompany].[sconsolglcompany].[hkd],[mreference].[mreference].[baseperiod],[mconsolglcompany].[mconsolglcompany].[amount(k)],[mremarkconsolglcompanyreporting].[mremarkconsolglcompanyreporting].[remark])

@@ -1,0 +1,5 @@
+SELECT
+{[M Consol GL Group Entry].[M Consol GL Group Entry].[Balance],[M Consol GL Group Entry].[M Consol GL Group Entry].[Dr],[M Consol GL Group Entry].[M Consol GL Group Entry].[Cr],[M Consol GL Group Entry].[M Consol GL Group Entry].[Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {EXCEPT({TM1FILTERBYLEVEL({[Entry ID].[Entry ID].Members}, 1)},{[Entry ID].[Entry ID].[All Entry IDs]})} * {TM1SUBSETTOSET([company].[company],"All N Elements")} * {TM1SUBSETTOSET([account].[account],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglgroupentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[2017],[month].[month].[12],[periodtype].[periodtype].[ytd],[group].[group].[(group)e12],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[0000],[segment2].[segment2].[0000],[segment3].[segment3].[0000],[lineitem].[lineitem].[alllineitems],[segment4].[segment4].[0000],[accountreport].[accountreport].[allaccountreports],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsolglgroupentry].[sconsolglgroupentry].[ccd])

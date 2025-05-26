@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GB Staging].[M GB Staging].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([accountgb].[accountgb],"All N Elements")} * {TM1SUBSETTOSET([voucherid].[voucherid],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} * {TM1SUBSETTOSET([account].[account],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbstaging]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[group].[group].[(group)a000],[sgbstaging].[sgbstaging].[eckingdee])

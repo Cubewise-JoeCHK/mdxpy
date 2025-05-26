@@ -1,0 +1,4 @@
+SELECT
+{TM1SUBSETTOSET([}apqgroups].[}apqgroups],"All N Elements")} * {[}apqsecuritymanageclientgroupsmeasure].[}apqsecuritymanageclientgroupsmeasure].[assignment],[}apqsecuritymanageclientgroupsmeasure].[}apqsecuritymanageclientgroupsmeasure].[currentassignment],[}apqsecuritymanageclientgroupsmeasure].[}apqsecuritymanageclientgroupsmeasure].[currentassignmentvalidation]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqclients].[}apqclients],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqsecuritymanageclientgroups]

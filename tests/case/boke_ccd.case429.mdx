@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF Unify Output Data].[M GLF Unify Output Data].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyoutputdata]
+WHERE ([scenario].[scenario].[act],[year].[year].[2018],[month].[month].[allmtd],[}apqclients].[}apqclients].[totalapqclients],[glftype].[glftype].[allglftype],[glfoutputdatatype].[glfoutputdatatype].[手工上传])

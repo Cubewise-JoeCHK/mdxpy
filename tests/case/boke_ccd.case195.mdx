@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Intercompany Allocation Assumption].[M Consol Intercompany Allocation Assumption].[Allocation Driver]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Consol Intercompany Allocation Category].[Consol Intercompany Allocation Category].[No Category]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolintercompanyallocationassumption]
+WHERE ([year].[year].[2021],[month].[month].[01],[group].[group].[(group)a100],[consolintercompanytransactiontype].[consolintercompanytransactiontype].[商务招待分摊],[company].[company].[companyentry])

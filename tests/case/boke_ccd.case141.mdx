@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([mconsolglcompanyentryinput].[mconsolglcompanyentryinput],"单体调整模版")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[S Consol GL Company Entry Input].[S Consol GL Company Entry Input].[ECA],[S Consol GL Company Entry Input].[S Consol GL Company Entry Input].[EC]} * {TM1SUBSETTOSET([entryid].[entryid],"重分类调整")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyentryinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[03],[periodtype].[periodtype].[current],[company].[company].[a100])

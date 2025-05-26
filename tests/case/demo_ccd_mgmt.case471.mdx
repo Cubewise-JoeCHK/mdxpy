@@ -1,0 +1,5 @@
+SELECT
+{[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[attributename],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[type],[}apqdimensionattributesmeasure].[}apqdimensionattributesmeasure].[exists]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqitemindex].[}apqitemindex],"All N Elements code")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributes]
+WHERE ([}apqdimensions].[}apqdimensions].[account])

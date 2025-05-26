@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Group Entry].[M Consol GL Group Entry].[Balance],[M Consol GL Group Entry].[M Consol GL Group Entry].[Dr],[M Consol GL Group Entry].[M Consol GL Group Entry].[Cr],[M Consol GL Group Entry].[M Consol GL Group Entry].[Plug Dr],[M Consol GL Group Entry].[M Consol GL Group Entry].[Plug Cr],[M Consol GL Group Entry].[M Consol GL Group Entry].[Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Entry ID].[Entry ID].[All Entry IDs]} * {[Company].[Company].[All Children]} * {[Account].[Account].[000],[Account].[Account].[90]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglgroupentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[2020],[month].[month].[12],[periodtype].[periodtype].[ytd],[group].[group].[(group)e12],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[0000],[segment2].[segment2].[0000],[segment3].[segment3].[0000],[segment4].[segment4].[0000],[accountreport].[accountreport].[allaccountreports],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsolglgroupentry].[sconsolglgroupentry].[elim],[lineitem].[lineitem].[alllineitems])

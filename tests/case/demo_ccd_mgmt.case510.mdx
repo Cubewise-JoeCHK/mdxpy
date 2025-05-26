@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([}apqdimensionusemeasure].[}apqdimensionusemeasure],"All Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqcubes].[}apqcubes],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionuse]
+WHERE ([}apqdimensions].[}apqdimensions].[}apqdimensionsubsets])

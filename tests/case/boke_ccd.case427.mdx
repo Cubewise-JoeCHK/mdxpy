@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol JE Company].[M Consol JE Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[S Consol JE Company].[S Consol JE Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyjefilter]
+WHERE ([scenario].[scenario].[act],[year].[year].[2018],[month].[month].[allmtd],[company].[company].[allcompanieslist],[glftype].[glftype].[allglftype],[jeid].[jeid].[0001],[jelineitem].[jelineitem].[0501])

@@ -1,0 +1,5 @@
+SELECT
+{[Report Mapping Segment].[Report Mapping Segment].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[M Consol Definition Report Mapping].[M Consol Definition Report Mapping].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionreportmapping]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[reportmapping].[reportmapping].[cashflow],[accountreport].[accountreport].[interestsinassociates],[updaterecord].[updaterecord].[updateinput],[rule].[rule].[0001])

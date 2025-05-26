@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M YS Report].[M YS Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {DRILLUPMEMBER({[Account YS].[Account YS].Members}, {[Account YS].[Account YS].[All Account YSs]})} * {DRILLDOWNMEMBER({DRILLUPMEMBER({[Project GB].[Project GB].Members}, {[Project GB].[Project GB].[All Project GBs]})}, {[Project GB].[Project GB].[All Project GBs]})} * {DRILLDOWNMEMBER({[Department GB].[Department GB].[All Department GBs]}, {[Department GB].[Department GB].[All Department GBs]})} * {[S YS Report].[S YS Report].[All Data Sources]} * {[Account].[Account].[All Accounts]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [ysreport]
+WHERE ([scenario].[scenario].[fc4+8],[version].[version].[wip],[year].[year].[2023],[month].[month].[05],[ysglftype].[ysglftype].[alltypes],[mreference].[mreference].[baseperiod],[company].[company].[a105])

@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([msysversioningcube].[msysversioningcube],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}cubes].[}cubes],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [sysversioningcube]
+WHERE ([scenario].[scenario].[fcst],[version].[version].[wip],[year].[year].[2018],[sysversioningmodule].[sysversioningmodule].[module1])

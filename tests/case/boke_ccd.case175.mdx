@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {EXCEPT({EXCEPT({EXCEPT({EXCEPT({[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].Members},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Account Disclosure Name]})},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Account Report Name]})},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Currency]})},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Company Name]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([lineitem].[lineitem],"1-100 w Total")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglgroupentryinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[periodtype].[periodtype].[ytd],[group].[group].[(group)a100],[sconsolglgroupentryinput].[sconsolglgroupentryinput].[elim],[entryid].[entryid].[m001])

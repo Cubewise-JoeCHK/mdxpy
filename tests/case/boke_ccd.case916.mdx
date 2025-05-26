@@ -1,0 +1,5 @@
+SELECT
+{[}apqprocessparametersinfomeasure].[}apqprocessparametersinfomeasure].[count],[}apqprocessparametersinfomeasure].[}apqprocessparametersinfomeasure].[parameter],[}apqprocessparametersinfomeasure].[}apqprocessparametersinfomeasure].[type],[}apqprocessparametersinfomeasure].[}apqprocessparametersinfomeasure].[sdefaultvalue],[}apqprocessparametersinfomeasure].[}apqprocessparametersinfomeasure].[parallelizationdefault],[}apqprocessparametersinfomeasure].[}apqprocessparametersinfomeasure].[prompt]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqprocessparameters].[}apqprocessparameters],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqprocessparametersinfo]
+WHERE ([}apqprocesses].[}apqprocesses].[api.gdzcdz.caller])

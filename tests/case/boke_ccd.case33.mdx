@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Definition Elimination Input].[M Consol Definition Elimination Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Group].[Group].[Group Entry],[Group].[Group].[All Groups List^(Group) D107]} * {[Line Item].[Line Item].[0000],[Line Item].[Line Item].[0001],[Line Item].[Line Item].[0002],[Line Item].[Line Item].[0003],[Line Item].[Line Item].[0004],[Line Item].[Line Item].[0005]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitioneliminationinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[intercompanycategory].[intercompanycategory].[intercompanycategoryentry],[eliminationtype].[eliminationtype].[et002])

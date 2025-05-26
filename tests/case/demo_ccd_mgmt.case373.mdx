@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqdimensionattributes].[}apqdimensionattributes],"Org Tree")} * {TM1SUBSETTOSET([}apqdimensionattributedefinitionmeasure].[}apqdimensionattributedefinitionmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqdimensionelements].[}apqdimensionelements],"Org Tree")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributedefinition]
+WHERE ([}apqdimensionhierarchies].[}apqdimensionhierarchies].[orgtree:orgtree])

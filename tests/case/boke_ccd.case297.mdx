@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GB Entry Check].[M GB Entry Check].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([voucherid].[voucherid],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} * {[S GB Entry Check].[S GB Entry Check].[ECC 01],[S GB Entry Check].[S GB Entry Check].[ECC 02],[S GB Entry Check].[S GB Entry Check].[ECC 03]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbentrycheckecc]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[month].[month].[04])

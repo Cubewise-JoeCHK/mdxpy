@@ -1,0 +1,5 @@
+SELECT
+{[}Cultures].[en],[}Cultures].[zh],[}Cultures].[zh-Hans],[}Cultures].[zh-Hant],[}Cultures].[zh-HK],[}Cultures].[zh-MO],[}Cultures].[zh-TW],[}Cultures].[zh-CN],[}Cultures].[zh-SG]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[}Dimensions].[}Dimensions].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}localizeddimensionattributes]
+WHERE ([}dimensionattributes].[}dimensionattributes].[caption])

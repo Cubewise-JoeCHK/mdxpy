@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[}ElementAttributes_Entry ID].[}ElementAttributes_Entry ID].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([entryid].[entryid],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}localizedelementattributes_entryid]
+WHERE ([}cultures].[}cultures].[en])

@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETALL([Account Report].[Account Report])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Account Disclosure].[Account Disclosure].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[periodtype].[periodtype].[current],[company].[company].[d30],[intercompany].[intercompany].[allintercompanies],[segment2].[segment2].[allsegments],[account].[account].[allaccounts],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[sconsolglcompany].[sconsolglcompany].[ec],[mconsolglcompany].[mconsolglcompany].[amount],[segment1].[segment1].[0000])

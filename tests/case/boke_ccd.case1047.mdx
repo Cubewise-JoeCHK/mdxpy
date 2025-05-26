@@ -1,0 +1,5 @@
+SELECT
+{[}picklist].[}picklist].[value]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqprocessparallelizationcontrolmeasure].[}apqprocessparallelizationcontrolmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}picklist_}apqprocessparallelizationcontrol]
+WHERE ([}apqprocesses].[}apqprocesses].[totalapqprocesses])

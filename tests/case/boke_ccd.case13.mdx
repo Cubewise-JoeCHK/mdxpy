@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {DRILLUPMEMBER({DRILLDOWNMEMBER({[S Consol Data Check].[S Consol Data Check].[Upload - TB],[S Consol Data Check].[S Consol Data Check].[Sys - TB],[S Consol Data Check].[S Consol Data Check].[Check Result -TB]}, {[S Consol Data Check].[S Consol Data Check].[Check Result -TB]})}, {[S Consol Data Check].[S Consol Data Check].[Check Result -TB]})} * {[M Consol Data Check].[M Consol Data Check].[Compare Target],[M Consol Data Check].[M Consol Data Check].[Mapped Account],[M Consol Data Check].[M Consol Data Check].[OB],[M Consol Data Check].[M Consol Data Check].[Dr Accumulate],[M Consol Data Check].[M Consol Data Check].[Cr Accumulate],[M Consol Data Check].[M Consol Data Check].[CB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldatacheck]
+WHERE ([year].[year].[2023],[month].[month].[09],[company].[company].[a115])

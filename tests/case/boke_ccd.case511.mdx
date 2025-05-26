@@ -1,0 +1,4 @@
+SELECT
+{[M UX Filter].[M UX Filter].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1FILTERBYLEVEL({[UX Filter].[UX Filter].Members}, 1)} * {ORDER({[Line Item].[Line Item].[0001],[Line Item].[Line Item].[0002],[Line Item].[Line Item].[0003],[Line Item].[Line Item].[0004],[Line Item].[Line Item].[0005],[Line Item].[Line Item].[0006],[Line Item].[Line Item].[0007],[Line Item].[Line Item].[0008],[Line Item].[Line Item].[0009],[Line Item].[Line Item].[0010]},[UX Filter].([UX Filter].[UX Filter].CurrentMember,[M UX Filter].[M UX Filter].[Sort]), ASC )} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [uxfilter]

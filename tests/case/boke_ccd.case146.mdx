@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company].[M Consol GL Company].[Reminder Flag]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([segment2].[segment2],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyreporting]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[periodtype].[periodtype].[ytd],[mreference].[mreference].[baseperiod],[segment3].[segment3].[0000],[segment4].[segment4].[0000],[accountreport].[accountreport].[0000],[accountdisclosure].[accountdisclosure].[0000],[segment1].[segment1].[0000],[sconsolglcompany].[sconsolglcompany].[ec],[account].[account].[0000],[month].[month].[06],[company].[company].[a101],[intercompany].[intercompany].[0000])

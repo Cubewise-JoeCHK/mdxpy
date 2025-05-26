@@ -1,0 +1,5 @@
+SELECT
+{[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Department GB],[M GB Definition Mapping Input].[M GB Definition Mapping Input].[State],[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Count Data Valid],[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Count Check Department GB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {DRILLDOWNMEMBER({[Department Boke].[Department Boke].[All Department Bokes]}, {[Department Boke].[Department Boke].[All Department Bokes]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbdefinitionmappingdeptinput]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[sgbdefinitionmappinginput].[sgbdefinitionmappinginput].[extra004])

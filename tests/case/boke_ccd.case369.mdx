@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF RLFW Allocation Report].[M GLF RLFW Allocation Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[GLF RLFW Account].[GLF RLFW Account].Members} * {TM1SUBSETTOSET([glftypemajorkey].[glftypemajorkey],"Picklist All N GLJYLX008")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfrlfwallocationreport]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[03],[companyselect1].[companyselect1].[a131],[glftype].[glftype].[gljylx008],[sglfrlfwallocationreport].[sglfrlfwallocationreport].[原始值])

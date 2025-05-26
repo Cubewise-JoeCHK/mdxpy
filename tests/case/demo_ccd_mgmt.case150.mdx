@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Track Report Data Load].[M Consol Track Report Data Load].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoltrackreportdataload]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[datatype].[datatype].[tb],[sconsoltrackreportdataload].[sconsoltrackreportdataload].[srcsystem],[company].[company].[p03])

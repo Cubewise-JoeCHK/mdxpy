@@ -1,0 +1,4 @@
+SELECT
+{[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[description],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[value],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[staticthreshold],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[valuethreshold],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[static],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[live-staticdelta]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqreconciliationitem].[}apqreconciliationitem],"Items Used")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqreconciliationcheck]

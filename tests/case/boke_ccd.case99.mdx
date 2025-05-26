@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company].[M Consol GL Company].[Amount(dollar)^Amount],[M Consol GL Company].[M Consol GL Company].[Dr],[M Consol GL Company].[M Consol GL Company].[Cr],[M Consol GL Company].[M Consol GL Company].[CB],[M Consol GL Company].[M Consol GL Company].[OB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {EXCEPT({TM1FILTERBYLEVEL({TM1DRILLDOWNMEMBER({[Company].[Company].[All Companies]}, ALL, RECURSIVE )}, 0)},{[Company].[Company].[All Companies^0000]})} * {TM1FILTERBYLEVEL({TM1DRILLDOWNMEMBER({[Account Report].[Account Report].[All FSs]}, ALL, RECURSIVE )}, 0)} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[periodtype].[periodtype].[ytd],[segment1].[segment1].[allsegments],[segment4].[segment4].[allsegments],[month].[month].[01],[segment3].[segment3].[allsegments],[segment2].[segment2].[allsegments],[accountdisclosure].[accountdisclosure].[alltbs],[sconsolglcompany].[sconsolglcompany].[ect],[intercompany].[intercompany].[allintercompanies],[account].[account].[allaccounts])

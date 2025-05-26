@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol CIT Adjust Calc JE Filter].[M Consol CIT Adjust Calc JE Filter].[Count]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([adjustitem].[adjustitem],"All N Elements")} * {[JE Line Item].[JE Line Item].[0000]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolcitadjustcalcjefilter]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[company].[company].[a100])

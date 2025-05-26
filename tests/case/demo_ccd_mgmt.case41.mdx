@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].Members} * {[S Consol Footnotes Group Line Item].[S Consol Footnotes Group Line Item].[EC],[S Consol Footnotes Group Line Item].[S Consol Footnotes Group Line Item].[PC],[S Consol Footnotes Group Line Item].[S Consol Footnotes Group Line Item].[Elim],[S Consol Footnotes Group Line Item].[S Consol Footnotes Group Line Item].[Consol]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {DRILLDOWNMEMBER({[Company].[Company].[All Children]}, {[Company].[Company].[All Children]})} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolfootnotesgrouplineitem]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[group].[group].[(group)e12],[accountreport].[accountreport].[othernon-currentassets/projectloan/longtermreceivable])

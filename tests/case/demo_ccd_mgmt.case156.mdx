@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([month].[month],"Month List Subset")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[FX Rate Type].[FX Rate Type].[Average Rate],[FX Rate Type].[FX Rate Type].[Spot Rate]} * {[Year].[Year].[2017],[Year].[Year].[2018],[Year].[Year].[2019],[Year].[Year].[2020],[Year].[Year].[2021],[Year].[Year].[All Years^2022],[Year].[Year].[All Years^2023],[Year].[Year].[All Years^2024],[Year].[Year].[2025]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [fxrate]
+WHERE ([scenario].[scenario].[act],[currencyto].[currencyto].[aed],[currencyfrom].[currencyfrom].[aed],[mfxrate].[mfxrate].[rate])

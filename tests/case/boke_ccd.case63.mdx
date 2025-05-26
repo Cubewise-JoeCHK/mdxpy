@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([mconsoldefinitiontaxadjustentry].[mconsoldefinitiontaxadjustentry],"分配配置")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([company].[company],"All N Companies")} * {[JE Line Item].[JE Line Item].[0001],[JE Line Item].[JE Line Item].[0002],[JE Line Item].[JE Line Item].[0003],[JE Line Item].[JE Line Item].[0004],[JE Line Item].[JE Line Item].[0005]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitiontaxadjustentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[entryid].[entryid].[ta002])

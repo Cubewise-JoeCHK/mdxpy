@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([mconsoldefinitioncitadjustcalc].[mconsoldefinitioncitadjustcalc],"取数配置表")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([adjustitem].[adjustitem],"取数主表")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitioncitadjustcalc]
+WHERE ([scenario].[scenario].[act],[year].[year].[2020],[month].[month].[04],[company].[company].[0000])

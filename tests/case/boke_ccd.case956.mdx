@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[}apqsecurityeffectivepermissionmeasure].[}apqsecurityeffectivepermissionmeasure].[value],[}apqsecurityeffectivepermissionmeasure].[}apqsecurityeffectivepermissionmeasure].[string]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqclients].[}apqclients],"All Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqsecurityeffectiveclientapplicationfolderpermissions]
+WHERE ([}apqapplications].[}apqapplications].[}applications],[}apqgroups].[}apqgroups].[admin])

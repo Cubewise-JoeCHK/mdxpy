@@ -1,0 +1,4 @@
+SELECT
+NON EMPTY {[}apqreconciliationsetupmeasure].[}apqreconciliationsetupmeasure].[reference],[}apqreconciliationsetupmeasure].[}apqreconciliationsetupmeasure].[itemdescription],[}apqreconciliationsetupmeasure].[}apqreconciliationsetupmeasure].[longdescription]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqreconciliationitem].[}apqreconciliationitem],"All Items")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqreconciliationsetup]

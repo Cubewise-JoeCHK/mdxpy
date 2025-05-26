@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([}apqtimedayinyear].[}apqtimedayinyear],"Relative Time -Current Month")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqclients].[}apqclients],"All Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apquseractivitylog]
+WHERE ([}apqtimeyear].[}apqtimeyear].[2025],[}apquseractivitylogmeasure].[}apquseractivitylogmeasure].[activitycount],[}apqtimeminute].[}apqtimeminute].[totalday])

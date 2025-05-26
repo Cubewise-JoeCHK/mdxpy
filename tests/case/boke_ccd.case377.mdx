@@ -1,0 +1,5 @@
+SELECT
+{[M GLF SQFCI Company Acc Segment 1 Filter Config].[M GLF SQFCI Company Acc Segment 1 Filter Config].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([lineitem].[lineitem],"1-200")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsqfcicompanyaccsegment1filterconfig]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[01])

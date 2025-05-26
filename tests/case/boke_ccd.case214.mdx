@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol JE Error Record].[M Consol JE Error Record].[Error Flag]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Error Type].[Error Type].[ErrorType01],[Error Type].[Error Type].[ErrorType02],[Error Type].[Error Type].[ErrorType03],[Error Type].[Error Type].[ErrorType04]} * {TM1SUBSETTOSET([company].[company],"All N Companies")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoljeerrorrecord]
+WHERE ([year].[year].[2023],[month].[month].[13],[lineitem].[lineitem].[alllineitems],[sconsoljecompany].[sconsoljecompany].[alljedatasources])

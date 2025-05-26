@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {DRILLDOWNMEMBER({[M Reference].[M Reference].[MoM (%)]}, {[M Reference].[M Reference].[MoM (%)]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([account].[account],"科目提醒")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyreporting]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[periodtype].[periodtype].[current],[mconsolglcompany].[mconsolglcompany].[amount],[company].[company].[a101],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[alltbs],[sconsolglcompany].[sconsolglcompany].[ect],[intercompany].[intercompany].[allintercompanies],[accountreport].[accountreport].[alltbs])

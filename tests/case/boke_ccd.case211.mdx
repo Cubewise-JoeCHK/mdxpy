@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol JE Company].[M Consol JE Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[JE ID].[JE ID].Members} * {[JE Line Item].[JE Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoljecompanystaging]
+WHERE ([year].[year].[2025],[month].[month].[05],[company].[company].[allcompanieslist],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[account].[account].[allaccounts],[accountreport].[accountreport].[allaccountreports],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsoljecompany].[sconsoljecompany].[alldatasources])

@@ -1,0 +1,5 @@
+SELECT
+{[M GLF Unify Data Filter Config].[M GLF Unify Data Filter Config].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([lineitem].[lineitem],"1-200")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifydatafilterconfig]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[02],[company].[company].[a100],[glftype].[glftype].[allglftype])

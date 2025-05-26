@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([}apqprocessexecutionlogmeasure].[}apqprocessexecutionlogmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([}apqtimeminute].[}apqtimeminute],"All N Elements reverse")} * {TM1SUBSETTOSET([}apqtimesecond].[}apqtimesecond],"All N Elements reverse")} * {TM1SUBSETTOSET([}apqprocesses].[}apqprocesses],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqprocessexecutionlog]
+WHERE ([}apqtimeyear].[}apqtimeyear].[2025],[}apqtimedayinyear].[}apqtimedayinyear].[d133])

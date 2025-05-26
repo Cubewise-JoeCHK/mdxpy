@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF SQFCI Segment1 Regroup].[M GLF SQFCI Segment1 Regroup].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([segment1].[segment1],"Picklist All N")} * {TM1FILTERBYLEVEL({TM1SUBSETALL([Company].[Company])}, 0)} * {[Intercompany].[Intercompany].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsqfcisegment1regroup]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01])

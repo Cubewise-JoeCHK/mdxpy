@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF Unify Data Allocation Base Input].[M GLF Unify Data Allocation Base Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifydataallocationbaseinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[company].[company].[allcompanieslist],[glfallocationdriver].[glfallocationdriver].[type01])

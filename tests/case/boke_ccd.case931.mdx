@@ -1,0 +1,5 @@
+SELECT
+{[}apqprocesstoobjectreferencemeasure].[}apqprocesstoobjectreferencemeasure].[isused],[}apqprocesstoobjectreferencemeasure].[}apqprocesstoobjectreferencemeasure].[objectlasttimeupdated]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqtm1objects].[}apqtm1objects],"Dimensions with Last Update Timestamp")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqprocesstoobjectreference]
+WHERE ([}apqtm1objecttype].[}apqtm1objecttype].[dimension],[}apqprocesses].[}apqprocesses].[totalapqprocesses])

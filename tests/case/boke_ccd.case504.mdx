@@ -1,0 +1,5 @@
+SELECT
+{[M Sys Workbench Dependency].[M Sys Workbench Dependency].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([sysworkbenchtask].[sysworkbenchtask],"temp")} * {[Line Item].[Line Item].[All Line Items],[Line Item].[Line Item].[0001],[Line Item].[Line Item].[0002]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [sysworkbenchdependency]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[sysworkbench].[sysworkbench].[wb01])

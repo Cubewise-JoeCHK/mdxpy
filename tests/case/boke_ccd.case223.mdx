@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Period Control].[M Consol Period Control].[Select],[M Consol Period Control].[M Consol Period Control].[Status],[M Consol Period Control].[M Consol Period Control].[Status Description],[M Consol Period Control].[M Consol Period Control].[Latest Update By],[M Consol Period Control].[M Consol Period Control].[Latest Update Time]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Company].[Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolperiodcontrol]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[09],[controlstep].[controlstep].[step01])

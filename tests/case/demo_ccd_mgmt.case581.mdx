@@ -1,0 +1,4 @@
+SELECT
+{[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[value],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[static],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[knownvariance],[}apqreconciliationcheckmeasure].[}apqreconciliationcheckmeasure].[description]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqreconciliationitem].[}apqreconciliationitem],"Comparisons Used")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqreconciliationcheck]

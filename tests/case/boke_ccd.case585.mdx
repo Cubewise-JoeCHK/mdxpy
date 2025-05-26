@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqdimensionattributes].[}apqdimensionattributes],"GLF SQFCI Segment1 Config")} * {TM1SUBSETTOSET([}apqdimensionattributedefinitionmeasure].[}apqdimensionattributedefinitionmeasure],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqdimensionelements].[}apqdimensionelements],"GLF SQFCI Segment1 Config")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensionattributedefinition]
+WHERE ([}apqdimensionhierarchies].[}apqdimensionhierarchies].[glfsqfcisegment1config:glfsqfcisegment1config])

@@ -1,0 +1,5 @@
+SELECT
+{[}apqsecuritymanageobjectaccessmeasure].[}apqsecuritymanageobjectaccessmeasure].[inactive],[}apqsecuritymanageobjectaccessmeasure].[}apqsecuritymanageobjectaccessmeasure].[permissiontype],[}apqsecuritymanageobjectaccessmeasure].[}apqsecuritymanageobjectaccessmeasure].[wildcardentry],[}apqsecuritymanageobjectaccessmeasure].[}apqsecuritymanageobjectaccessmeasure].[attributename],[}apqsecuritymanageobjectaccessmeasure].[}apqsecuritymanageobjectaccessmeasure].[permissionlevel]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqsecuritypermissionindex].[}apqsecuritypermissionindex],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqsecuritymanageobjectaccess]
+WHERE ([}apqtm1objecttype].[}apqtm1objecttype].[chore],[}apqtm1objects].[}apqtm1objects].[totalapqtm1objects],[}apqgroups].[}apqgroups].[f:entityreportviewer])

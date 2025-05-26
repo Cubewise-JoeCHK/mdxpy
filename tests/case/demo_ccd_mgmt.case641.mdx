@@ -1,0 +1,5 @@
+SELECT
+{[}apquseractivitylogmeasure].[}apquseractivitylogmeasure].[activity]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqtimedayinyear].[}apqtimedayinyear],"Calendar Days")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apquseractivitylog]
+WHERE ([}apqtimeyear].[}apqtimeyear].[2025],[}apqtimeminute].[}apqtimeminute].[totalday],[}apqclients].[}apqclients].[totalapqclients])

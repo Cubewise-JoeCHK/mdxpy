@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol JE Company].[M Consol JE Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Elements")} * {TM1SUBSETTOSET([jeid].[jeid],"All N Elements")} * {TM1SUBSETTOSET([jelineitem].[jelineitem],"1-30")} * {TM1SUBSETTOSET([sconsoljecompany].[sconsoljecompany],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyconsoljecompanyfillglftype]
+WHERE ([year].[year].[2023],[month].[month].[05])

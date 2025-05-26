@@ -1,0 +1,5 @@
+SELECT
+{[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Project GB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([departmentgb].[departmentgb],"Picklist All N")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbdefinitionmappingprojectndeptinput]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[segment1].[segment1].[0000],[sgbdefinitionmappinginput].[sgbdefinitionmappinginput].[extra003],[segment2].[segment2].[0000],[accountgb].[accountgb].[pl00],[company].[company].[0000],[projectgb].[projectgb].[xmm0000])

@@ -1,0 +1,5 @@
+SELECT
+{[Reclassfication Segment].[Reclassfication Segment].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([rule].[rule],"5")} * {TM1SUBSETTOSET([mconsoldefinitionreclassfication].[mconsoldefinitionreclassfication],"重分类调整")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionreclassfication]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[company].[company].[0000],[updaterecord].[updaterecord].[updateinput],[entryid].[entryid].[ra001])

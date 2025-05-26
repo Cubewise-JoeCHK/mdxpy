@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Intercompany Allocation Entry].[M Consol Intercompany Allocation Entry].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Company].[Company].[Company Entry],[Company].[Company].[All Companies]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolintercompanyallocationentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[group].[group].[(group)a100],[account].[account].[allaccounts],[consolintercompanytransactiontype].[consolintercompanytransactiontype].[商务招待分摊])

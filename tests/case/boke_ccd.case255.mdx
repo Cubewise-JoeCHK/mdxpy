@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([month].[month],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Currency From].[Currency From].[AUD],[Currency From].[Currency From].[CNY],[Currency From].[Currency From].[EUR],[Currency From].[Currency From].[HKD],[Currency From].[Currency From].[JPY],[Currency From].[Currency From].[NTD],[Currency From].[Currency From].[SGD],[Currency From].[Currency From].[RUB],[Currency From].[Currency From].[USD]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [fxrate]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[currencyto].[currencyto].[cny],[fxratetype].[fxratetype].[spotrate],[mfxrate].[mfxrate].[rate])

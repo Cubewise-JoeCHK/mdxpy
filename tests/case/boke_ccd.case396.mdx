@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETALL([M GLF Sys Output Data ID].[M GLF Sys Output Data ID])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([glfsysoutputdataid].[glfsysoutputdataid],"List 0 Level")} * {[Line Item].[Line Item].[0000]} * {TM1SUBSETTOSET([month].[month],"Default")} * {[GLF Sys Output Data Type].[GLF Sys Output Data Type].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsysoutputdataidsjzg]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[glfdatatype].[glfdatatype].[实际需暂估])

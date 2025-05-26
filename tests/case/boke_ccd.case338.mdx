@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF CSJS Allocation Report].[M GLF CSJS Allocation Report].Members} * {[S GLF CSJS Allocation Report].[S GLF CSJS Allocation Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Year Month].[Year Month].[All Years^2025^2025-03]} * {DRILLDOWNMEMBER({[Account].[Account].[All Accounts]}, {[Account].[Account].[All Accounts]})} * {DRILLDOWNMEMBER({[GLF Type Major Key].[GLF Type Major Key].[GLJYLX009]}, {[GLF Type Major Key].[GLF Type Major Key].[GLJYLX009]})} * {[Segment 1].[Segment 1].[All Segments]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfcsjsallocationreport]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[03],[companyselect1].[companyselect1].[a107],[glftype].[glftype].[gljylx009])

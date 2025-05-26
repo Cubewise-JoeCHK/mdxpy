@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company].[M Consol GL Company].[OB],[M Consol GL Company].[M Consol GL Company].[Dr],[M Consol GL Company].[M Consol GL Company].[Cr],[M Consol GL Company].[M Consol GL Company].[CB],[M Consol GL Company].[M Consol GL Company].[Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY Descendants( [Account].[Account].[All Accounts] ) DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[periodtype].[periodtype].[current],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountreport].[accountreport].[0000],[accountdisclosure].[accountdisclosure].[0000],[intercompany].[intercompany].[allintercompanies],[company].[company].[a101],[sconsolglcompany].[sconsolglcompany].[ec],[month].[month].[05])

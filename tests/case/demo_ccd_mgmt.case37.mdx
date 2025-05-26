@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Elements")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolfootnotescompanylineitem]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[accountreport].[accountreport].[goodwill],[sconsolfootnotescompanylineitem].[sconsolfootnotescompanylineitem].[ccd])

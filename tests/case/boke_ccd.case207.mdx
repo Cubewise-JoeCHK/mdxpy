@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([mconsoljecompany].[mconsoljecompany],"JE Query")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Month].[Month].[All MTD^01],[Month].[Month].[All MTD^02],[Month].[Month].[All MTD^03],[Month].[Month].[All MTD^04],[Month].[Month].[All MTD^05],[Month].[Month].[All MTD^06],[Month].[Month].[All MTD^07],[Month].[Month].[All MTD^08],[Month].[Month].[All MTD^09],[Month].[Month].[All MTD^10],[Month].[Month].[All MTD^11],[Month].[Month].[All MTD^12]} * {TM1SUBSETTOSET([jeid].[jeid],"All N Elements")} * {TM1SUBSETTOSET([jelineitem].[jelineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoljecompanyfilter]
+WHERE ([}apqclients].[}apqclients].[camid("bokeauth:u:3gd7c459:王艺璇")],[year].[year].[2025],[company].[company].[a100])

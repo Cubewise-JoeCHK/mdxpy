@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Definition Cell Reference].[M Consol Definition Cell Reference].[Name],[M Consol Definition Cell Reference].[M Consol Definition Cell Reference].[Element Type],[M Consol Definition Cell Reference].[M Consol Definition Cell Reference].[Element],[M Consol Definition Cell Reference].[M Consol Definition Cell Reference].[Sample Element],[M Consol Definition Cell Reference].[M Consol Definition Cell Reference].[Sample Value]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Cell Reference Object].[Cell Reference Object].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitioncellreference]
+WHERE ([cellreference].[cellreference].[cr0005])

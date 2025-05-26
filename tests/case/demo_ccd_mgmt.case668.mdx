@@ -1,0 +1,4 @@
+SELECT
+{[}ElementAttributes_Year Month].[}ElementAttributes_Year Month].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1DRILLDOWNMEMBER({[Year Month].[Year Month].[All Years^2022],[Year Month].[Year Month].[All Years^2023]}, {[Year Month].[Year Month].[All Years^2022],[Year Month].[Year Month].[All Years^2023]}, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}elementattributes_yearmonth]

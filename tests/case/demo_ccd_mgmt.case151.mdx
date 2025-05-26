@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Track Report Mapping].[M Consol Track Report Mapping].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([accountdisclosure].[accountdisclosure],"All N Elements")} * {TM1SUBSETTOSET([sconsolglcompany].[sconsolglcompany],"All N Elements")} * {TM1SUBSETTOSET([rule].[rule],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoltrackreportmappingcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[company].[company].[m04],[accountreport].[accountreport].[interestsinsubsidiaries-cost],[mconsolglcompany].[mconsolglcompany].[amount])

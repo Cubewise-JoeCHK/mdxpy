@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company TB Check].[M Consol GL Company TB Check].[OB],[M Consol GL Company TB Check].[M Consol GL Company TB Check].[Dr],[M Consol GL Company TB Check].[M Consol GL Company TB Check].[Cr],[M Consol GL Company TB Check].[M Consol GL Company TB Check].[Dr Accumulate],[M Consol GL Company TB Check].[M Consol GL Company TB Check].[Cr Accumulate],[M Consol GL Company TB Check].[M Consol GL Company TB Check].[CB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Account].[Account].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanytbcheck]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[company].[company].[a100],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[alltbs],[accountreport].[accountreport].[alltbs])

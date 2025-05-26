@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([month].[month],"All N Elements")} * {[M Consol GL Company].[M Consol GL Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Account].[Account].[All Accounts^1122.02.00.00]} * {[Segment 2].[Segment 2].[All Segments^0000]} * {[Segment 3].[Segment 3].[0000]} * {TM1SUBSETTOSET([accountreport].[accountreport],"All TB N Elements")} * {TM1FILTERBYLEVEL({TM1DRILLDOWNMEMBER({[Intercompany].[Intercompany].[关联企业]}, ALL, RECURSIVE )}, 0)} * {TM1SUBSETTOSET([segment1].[segment1],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[periodtype].[periodtype].[ytd],[segment4].[segment4].[0000],[company].[company].[a100],[accountdisclosure].[accountdisclosure].[0000],[sconsolglcompany].[sconsolglcompany].[ec])

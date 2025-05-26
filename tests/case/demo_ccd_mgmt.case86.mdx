@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([month].[month],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Segment 2].[Segment 2].[0000],[Segment 2].[Segment 2].[All Segments],[Segment 2].[Segment 2].[No BU]} * {[Account Report].[Account Report].[0000],[Account Report].[Account Report].[All Consol FS],[Account Report].[Account Report].[All Mgmt FS]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyreporting]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[mreference].[mreference].[baseperiod],[periodtype].[periodtype].[current],[company].[company].[d30],[intercompany].[intercompany].[0000],[segment1].[segment1].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[account].[account].[allaccounts],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsolglcompany].[sconsolglcompany].[ect],[mconsolglcompany].[mconsolglcompany].[amount])

@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GB Entry Check].[M GB Entry Check].[Amount FB],[M GB Entry Check].[M GB Entry Check].[Amount GB],[M GB Entry Check].[M GB Entry Check].[Amount Dif]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {EXCEPT({DRILLDOWNMEMBER({[Account GB].[Account GB].[All Account GBs]}, {[Account GB].[Account GB].[All Account GBs]})},{[Account GB].[Account GB].[All Account GBs]})} * {EXCEPT({DRILLDOWNMEMBER({[Department GB].[Department GB].[All Department GBs]}, {[Department GB].[Department GB].[All Department GBs]})},{[Department GB].[Department GB].[All Department GBs]})} * {[Project GB].[Project GB].[All Project GBs]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbentrycheckhrbyproject]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[entryidgb].[entryidgb].[gba0031],[sgbentrycheck].[sgbentrycheck].[bysj])

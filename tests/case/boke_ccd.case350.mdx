@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF FWQFT Allocation Base].[M GLF FWQFT Allocation Base].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[S GLF FWQFT Allocation Base].[S GLF FWQFT Allocation Base].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glffwqftallocationbase]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[09],[companyrd].[companyrd].[allcompanieslist],[glffwqftserveraccount].[glffwqftserveraccount].[所有服务器账号],[segment1].[segment1].[allsegments])

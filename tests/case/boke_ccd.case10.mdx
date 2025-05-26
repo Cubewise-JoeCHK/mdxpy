@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[S Consol Data Check].[S Consol Data Check].[Check Result^Upload],[S Consol Data Check].[S Consol Data Check].[Check Result^Sys],[S Consol Data Check].[S Consol Data Check].[Check Result]} * {[M Consol Data Check].[M Consol Data Check].[EC],[M Consol Data Check].[M Consol Data Check].[ECT],[M Consol Data Check].[M Consol Data Check].[Compare Target],[M Consol Data Check].[M Consol Data Check].[Mapped Account Report]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldatacheck]
+WHERE ([year].[year].[2023],[month].[month].[09],[company].[company].[a147])

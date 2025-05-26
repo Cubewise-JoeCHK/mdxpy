@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([}apqgroups].[}apqgroups],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqtm1objects].[}apqtm1objects],"All Application Root Folders")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqsecuritymanageobjectaccess]
+WHERE ([}apqtm1objecttype].[}apqtm1objecttype].[application],[}apqsecuritypermissionindex].[}apqsecuritypermissionindex].[001],[}apqsecuritymanageobjectaccessmeasure].[}apqsecuritymanageobjectaccessmeasure].[permissionlevel])

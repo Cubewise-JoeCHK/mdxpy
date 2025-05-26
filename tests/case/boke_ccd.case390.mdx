@@ -1,0 +1,4 @@
+SELECT
+{EXCEPT({EXCEPT({TM1SUBSETALL([M GLF Sys GLF TYPE Major Key Config].[M GLF Sys GLF TYPE Major Key Config])},{[M GLF Sys GLF TYPE Major Key Config].[M GLF Sys GLF TYPE Major Key Config].[GLFExpenseTypeID]})},{[M GLF Sys GLF TYPE Major Key Config].[M GLF Sys GLF TYPE Major Key Config].[GLFInvoiceTypeID]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([glftype].[glftype],"Picklist All N")} * {TM1SUBSETTOSET([lineitem].[lineitem],"Picklist All N")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsysglftypemajorkeyconfig]

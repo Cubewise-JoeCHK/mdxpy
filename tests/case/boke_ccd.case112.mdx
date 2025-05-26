@@ -1,0 +1,5 @@
+SELECT
+{[Month].[Month].[Q1],[Month].[Month].[Q2],[Month].[Month].[Q3],[Month].[Month].[Q4]} * {[Scenario].[Scenario].[ACT vs BUD],[Scenario].[Scenario].[ACT],[Scenario].[Scenario].[BUD]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Account].[Account].[400],[Account].[Account].[410],[Account].[Account].[510]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyentry]
+WHERE ([year].[year].[2021],[periodtype].[periodtype].[ytd],[accountreport].[accountreport].[allaccountreports],[entryid].[entryid].[allentryids],[lineitem].[lineitem].[alllineitems],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[company].[company].[allcompanies],[sconsolglcompanyentry].[sconsolglcompanyentry].[ec],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[mconsolglcompanyentry].[mconsolglcompanyentry].[amount],[segment4].[segment4].[allsegments])

@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M HR Expense].[M HR Expense].[薪酬调整（不含离职补偿）],[M HR Expense].[M HR Expense].[离职补偿金]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Expense Type].[Expense Type].[研发费用],[Expense Type].[Expense Type].[主营业务成本],[Expense Type].[Expense Type].[销售费用],[Expense Type].[Expense Type].[管理费用],[Expense Type].[Expense Type].[无]} * {EXCEPT({DRILLDOWNMEMBER({[Company].[Company].[All Companies List]}, {[Company].[Company].[All Companies List]})},{[Company].[Company].[All Companies List]})} * {EXCEPT({EXCEPT({DRILLDOWNMEMBER({[Segment 2].[Segment 2].[All Segments]}, {[Segment 2].[Segment 2].[All Segments]})},{[Segment 2].[Segment 2].[All Segments]})},{[Segment 2].[Segment 2].[BX_BXBM000002],[Segment 2].[Segment 2].[BX_BXBM000001],[Segment 2].[Segment 2].[BX_BXBM000003]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [hrexpense]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[month].[month].[10],[shrexpense].[shrexpense].[base],[employeetype].[employeetype].[挂靠])

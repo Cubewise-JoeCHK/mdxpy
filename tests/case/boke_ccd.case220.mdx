@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol JE Group Summary].[M Consol JE Group Summary].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1DRILLDOWNMEMBER({[Account].[Account].[All Accounts by Category]}, ALL)} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoljegroupsummary]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[group].[group].[(group)a100],[company].[company].[allcompanieslist],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountreport].[accountreport].[allaccountreports],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[jeid].[jeid].[allids],[sconsoljegroupsummary].[sconsoljegroupsummary].[alldatasources],[jelineitem].[jelineitem].[alllineitems])

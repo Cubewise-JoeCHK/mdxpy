@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([msystimeattribute].[msystimeattribute],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[date].[date].[2014-15],[date].[date].[2015-16],[date].[date].[2016-17],[date].[date].[2017-18],[date].[date].[2018-19],[date].[date].[2019-20],[date].[date].[2020-21],[date].[date].[2021-22],[date].[date].[2022-23],[date].[date].[2023-24],[date].[date].[2024-25],[date].[date].[2025-26],[date].[date].[2026-27],[date].[date].[2027-28],[date].[date].[2028-29],[date].[date].[2029-30],[date].[date].[2030-31]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [systimeattribute]
+WHERE ([timedeviation].[timedeviation].[t])

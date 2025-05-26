@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF Unify BPM Output Data Payment].[M GLF Unify BPM Output Data Payment].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item Short].[Line Item Short].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifybpmoutputdatapaymentdetail]
+WHERE ([scenario].[scenario].[act],[year].[year].[2018],[month].[month].[allmtd],[yearmonth].[yearmonth].[allyears],[company].[company].[allcompanieslist],[companyselect2].[companyselect2].[allcompanieslist],[intercompany].[intercompany].[0.017857289],[glftype].[glftype].[allglftype],[glfdatatype].[glfdatatype].[实际],[glfbpmoutputtype].[glfbpmoutputtype].[系统计算],[lineitem].[lineitem].[alllineitems])

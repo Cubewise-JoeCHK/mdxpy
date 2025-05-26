@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF SQFCI JE Filter].[M GLF SQFCI JE Filter].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[JE Line Item].[JE Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfsqfcijefilter]
+WHERE ([scenario].[scenario].[act],[year].[year].[2018],[month].[month].[allmtd],[company].[company].[allcompanieslist],[jeid].[jeid].[0001])

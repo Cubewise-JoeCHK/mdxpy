@@ -1,0 +1,5 @@
+SELECT
+{[M Consol GL Company].[M Consol GL Company].[OB - Load]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([account].[account],"All N Elements")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([segment1].[segment1],"All N Elements")} * {[Segment 3].[Segment 3].[0000]} * {TM1SUBSETTOSET([segment2].[segment2],"All N Elements")} * {TM1SUBSETTOSET([accountreport].[accountreport],"All TB N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[01],[periodtype].[periodtype].[ytd],[segment4].[segment4].[0000],[company].[company].[b104],[accountdisclosure].[accountdisclosure].[0000],[sconsolglcompany].[sconsolglcompany].[ec])

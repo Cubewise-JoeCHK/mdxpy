@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETALL([M GB Reporting].[M GB Reporting])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Company].[Company].[All Companies List^A152]} * {[Voucher ID].[Voucher ID].[0002],[Voucher ID].[Voucher ID].[0003],[Voucher ID].[Voucher ID].[0016],[Voucher ID].[Voucher ID].[0035],[Voucher ID].[Voucher ID].[0101]} * {TM1SUBSETTOSET([lineitem].[lineitem],"1-50")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbreportingentry]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[group].[group].[(group)a000],[sgbreporting].[sgbreporting].[base])

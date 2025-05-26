@@ -1,0 +1,8 @@
+SELECT NON EMPTY {[M Consol GL Company].[M Consol GL Company].[OB],[M Consol GL Company].[M Consol GL Company].[Dr],[M Consol GL Company].[M Consol GL Company].[Cr],[M Consol GL Company].[M Consol GL Company].[CB]} ON COLUMNS , NON EMPTY {[Account].[Account].[All Accounts^1511.00.00.00], 
+[Account].[Account].[All Accounts^1511.01.00.00], 
+[Account].[Account].[All Accounts^1511.02.00.00], 
+[Account].[Account].[All Accounts^1511.03.00.00]} * {TM1ToggleDrillState(
+{
+[Intercompany].[Intercompany].[All Intercompanies]
+},
+{[Intercompany].[Intercompany].[All Intercompanies]}, EXPAND_BELOW)} ON ROWS FROM [Consol GL Company] WHERE ([Scenario].[Scenario].[ACT],[Year].[Year].[2024],[Month].[Month].[05],[Period Type].[Period Type].[Current],[Segment 1].[Segment 1].[All Segments],[Segment 2].[Segment 2].[All Segments],[Segment 3].[Segment 3].[All Segments],[Segment 4].[Segment 4].[All Segments],[Account Report].[Account Report].[0000],[Account Disclosure].[Account Disclosure].[0000],[S Consol GL Company].[S Consol GL Company].[EC],[Company].[Company].[A100])

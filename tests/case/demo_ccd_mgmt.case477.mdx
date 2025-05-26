@@ -1,0 +1,5 @@
+SELECT
+{[}apqdimensiondefinitionmeasure].[}apqdimensiondefinitionmeasure].[string],[}apqdimensiondefinitionmeasure].[}apqdimensiondefinitionmeasure].[description]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqdimensiondefinitionparameter].[}apqdimensiondefinitionparameter],"Global Dimension Parameter")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apqdimensiondefinition]
+WHERE ([}apqdimensionhierarchies].[}apqdimensionhierarchies].[account],[}apqitemindex].[}apqitemindex].[totalitems])

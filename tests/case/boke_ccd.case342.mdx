@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF CSJS Segment 1 Mapping].[M GLF CSJS Segment 1 Mapping].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfcsjssegment1mapping]
+WHERE ([scenario].[scenario].[act],[year].[year].[2018],[month].[month].[allmtd],[company].[company].[allcompanieslist],[glftype].[glftype].[allglftype])

@@ -1,0 +1,5 @@
+SELECT
+{[M GLF Unify Financial Stage Data].[M GLF Unify Financial Stage Data].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[GLF Data Type].[GLF Data Type].[实际],[GLF Data Type].[GLF Data Type].[暂估],[GLF Data Type].[GLF Data Type].[暂估冲销]} * {[GLF Sys Output Data ID].[GLF Sys Output Data ID].[WBCBFT001**ZG**25030400031]} * {TM1SUBSETTOSET([lineitem].[lineitem],"1-200")} * {TM1SUBSETTOSET([yearmonth].[yearmonth],"All N Elements")} * {[GLF Sys Output Data Type].[GLF Sys Output Data Type].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyfinancialstagedata]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[02],[glfoutputdatatype].[glfoutputdatatype].[系统计算],[glftype].[glftype].[wbcbft001],[}apqclients].[}apqclients].[camid("bokeauth:u:e5e5gd66:杨霜")])

@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Profile Account Disclosure].[M Consol Profile Account Disclosure].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Account Disclosure].[Account Disclosure].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolprofileaccountdisclosure]
+WHERE ([updaterecord].[updaterecord].[updateinput])

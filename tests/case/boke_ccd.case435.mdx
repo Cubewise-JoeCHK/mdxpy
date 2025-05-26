@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETALL([M GLF Unify Output Data].[M GLF Unify Output Data])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([glftype].[glftype],"Picklist All N")} * {TM1SUBSETTOSET([glftypemajorkey].[glftypemajorkey],"Picklist All N")} * {TM1SUBSETTOSET([lineitem].[lineitem],"1-50")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifyoutputdatarollout]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[glfoutputdatatype].[glfoutputdatatype].[手工上传],[}apqclients].[}apqclients].[camid("bokeauth:u:65d86596:陈家明")],[month].[month].[allmtd])

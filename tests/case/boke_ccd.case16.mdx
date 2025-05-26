@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Definition Adjust Entry].[M Consol Definition Adjust Entry].[Adjust Entry Config 02]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([entryid].[entryid],"全部单体调整")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionadjustentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[unspecificyear],[company].[company].[0000],[month].[month].[00])

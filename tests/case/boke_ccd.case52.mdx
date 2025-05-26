@@ -1,0 +1,5 @@
+SELECT
+{TM1SUBSETTOSET([entryid].[entryid],"重分类调整")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([company].[company],"All Companies with 0000")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionreclassfication]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[updaterecord].[updaterecord].[updateinput],[reclassficationsegment].[reclassficationsegment].[criteria],[mconsoldefinitionreclassfication].[mconsoldefinitionreclassfication].[validflag],[rule].[rule].[0001])

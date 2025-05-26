@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Tax Company Status Upload].[M Consol Tax Company Status Upload].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([entryid].[entryid],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoltaxcompanystatusupload]
+WHERE ([year].[year].[2023],[month].[month].[05])

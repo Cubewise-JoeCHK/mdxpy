@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M HR Expense].[M HR Expense].[离职补偿金],[M HR Expense].[M HR Expense].[薪酬调整（不含离职补偿）]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {DRILLDOWNMEMBER({[Segment 2].[Segment 2].[All Segments]}, {[Segment 2].[Segment 2].[All Segments]})} * {DRILLUPMEMBER({DRILLDOWNMEMBER({[Segment 1].[Segment 1].[All Segments]}, {[Segment 1].[Segment 1].[All Segments]})}, {[Segment 1].[Segment 1].[All Segments]})} * {DRILLUPMEMBER({DRILLDOWNMEMBER({[Expense Type].[Expense Type].[所有费用类别]}, {[Expense Type].[Expense Type].[所有费用类别]})}, {[Expense Type].[Expense Type].[所有费用类别]})} * {DRILLUPMEMBER({DRILLDOWNMEMBER({[Employee Type].[Employee Type].[所有员工类型]}, {[Employee Type].[Employee Type].[所有员工类型]})}, {[Employee Type].[Employee Type].[所有员工类型]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [hrexpensebyproject]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[company].[company].[allcompanieslist],[shrexpense].[shrexpense].[base])

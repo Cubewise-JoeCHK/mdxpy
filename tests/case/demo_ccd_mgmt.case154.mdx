@@ -1,0 +1,5 @@
+SELECT
+{[M Def Cost Allocation].[M Def Cost Allocation].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([lineitem].[lineitem],"1-50")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [defcostallocation]
+WHERE ([year].[year].[2022],[month].[month].[12],[accountreport].[accountreport].[(mgmtrpt)overheads])

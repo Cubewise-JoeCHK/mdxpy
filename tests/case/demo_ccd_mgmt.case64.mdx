@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([segment1].[segment1],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1DRILLDOWNMEMBER({[Account Report].[Account Report].[All Mgmt PnL^(Mgmt Rpt) NET PROFITS/(LOSSES)]}, ALL, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[13],[periodtype].[periodtype].[ytd],[company].[company].[e46],[intercompany].[intercompany].[0000],[segment3].[segment3].[0000],[segment4].[segment4].[0000],[accountdisclosure].[accountdisclosure].[0000],[sconsolglcompany].[sconsolglcompany].[p13adj],[segment2].[segment2].[nobu],[mconsolglcompany].[mconsolglcompany].[amount],[account].[account].[0000])

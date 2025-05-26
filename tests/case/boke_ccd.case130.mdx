@@ -1,0 +1,5 @@
+SELECT
+{[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyentryinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[periodtype].[periodtype].[ytd],[company].[company].[a100],[entryid].[entryid].[m001],[sconsolglcompanyentryinput].[sconsolglcompanyentryinput].[eca])

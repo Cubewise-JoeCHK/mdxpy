@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company].[M Consol GL Company].[Amount]} * {TM1SUBSETTOSET([year].[year],"All N Elements")} * {TM1SUBSETTOSET([month].[month],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{DRILLDOWNMEMBER({DRILLDOWNMEMBER({[Account Report].[Account Report].[FS-001]}, {[Account Report].[Account Report].[FS-001]})}, {[Account Report].[Account Report].[FS-001^FS-001-A120]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[act],[periodtype].[periodtype].[ytd],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[account].[account].[allaccounts],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsolglcompany].[sconsolglcompany].[ect],[company].[company].[a139],[intercompany].[intercompany].[allintercompanies])

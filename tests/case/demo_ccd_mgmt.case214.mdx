@@ -1,0 +1,5 @@
+SELECT
+{[M Sys Workbench].[M Sys Workbench].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Sys Workbench Task].[Sys Workbench Task].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [sysworkbenchconsol]
+WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[companyreporting].[companyreporting].[companyinput],[sysworkbench].[sysworkbench].[wb01],[updaterecord].[updaterecord].[updateinput],[sysworkbenchdependency].[sysworkbenchdependency].[wbd00])

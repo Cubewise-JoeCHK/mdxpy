@@ -1,0 +1,4 @@
+SELECT
+{[}apquserlastactivemeasure].[}apquserlastactivemeasure].[dayssincelastactivity],[}apquserlastactivemeasure].[}apquserlastactivemeasure].[lastlogin],[}apquserlastactivemeasure].[}apquserlastactivemeasure].[lastloginordinal]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([}apqclients].[}apqclients],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}apquserlastactive]

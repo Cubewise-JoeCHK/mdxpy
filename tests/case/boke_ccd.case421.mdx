@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M GLF Unify Data Filter].[M GLF Unify Data Filter].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Intercompany].[Intercompany].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [glfunifydatafilterks]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[02],[company].[company].[allcompanieslist],[glftype].[glftype].[allglftype])

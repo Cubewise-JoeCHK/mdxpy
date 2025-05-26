@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Definition Report Mapping Detail].[M Consol Definition Report Mapping Detail].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([company].[company],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitionreportmappingdetailcompany]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[accountreport].[accountreport].[interestsinassociates],[segment3].[segment3].[0000],[segment1].[segment1].[0000],[segment2].[segment2].[0000],[segment4].[segment4].[0000],[account].[account].[30100-002],[intercompany].[intercompany].[g-50027],[accountdisclosure].[accountdisclosure].[0000],[rule].[rule].[0001])

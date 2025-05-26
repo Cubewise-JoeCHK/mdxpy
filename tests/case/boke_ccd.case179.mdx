@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([group].[group],"All N Elements")} * {TM1SUBSETTOSET([entryid].[entryid],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglgroupentryinput]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[sconsolglgroupentryinput].[sconsolglgroupentryinput].[elim],[lineitem].[lineitem].[alllineitems])

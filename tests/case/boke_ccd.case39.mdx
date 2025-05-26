@@ -1,0 +1,5 @@
+SELECT
+{[M Consol Definition Group].[M Consol Definition Group].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[Company].[Company].[All Companies].children} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoldefinitiongroup]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[group].[group].[allgroupslist])

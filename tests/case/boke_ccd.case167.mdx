@@ -1,0 +1,5 @@
+SELECT
+{EXCEPT({EXCEPT({TM1DRILLDOWNMEMBER({[M Consol GL Group].[M Consol GL Group].[Amount(m)],[M Consol GL Group].[M Consol GL Group].[Amount(k) - Rounding Adj Input]}, {[M Consol GL Group].[M Consol GL Group].[Amount(m)],[M Consol GL Group].[M Consol GL Group].[Amount(k) - Rounding Adj Input]}, RECURSIVE )},{[M Consol GL Group].[M Consol GL Group].[Amount(m)]})},{[M Consol GL Group].[M Consol GL Group].[Amount(m) - Rounding Adj]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {DRILLDOWNMEMBER({[Account].[Account].[All Accounts]}, {[Account].[Account].[All Accounts]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglgroup]
+WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[group].[group].[(group)a107],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountreport].[accountreport].[0000],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[sconsolglgroup].[sconsolglgroup].[contri],[company].[company].[allchildren])

@@ -1,0 +1,5 @@
+SELECT
+{[M GB Entry].[M GB Entry].[Channel],[M GB Entry].[M GB Entry].[Transaction],[M GB Entry].[M GB Entry].[Channel Fee w Tax],[M GB Entry].[M GB Entry].[Income w Tax],[M GB Entry].[M GB Entry].[Income],[M GB Entry].[M GB Entry].[Channel Fee]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[S GB Entry].[S GB Entry].[Rule Config]} * {[Line Item].[Line Item].[0001],[Line Item].[Line Item].[0002],[Line Item].[Line Item].[0003],[Line Item].[Line Item].[0004]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbentry]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[06],[entryidgb].[entryidgb].[gba0001])

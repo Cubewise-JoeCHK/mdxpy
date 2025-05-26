@@ -1,0 +1,5 @@
+SELECT
+{[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Company],[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Project GB],[M GB Definition Mapping Input].[M GB Definition Mapping Input].[Department GB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{TM1SUBSETTOSET([lineitem].[lineitem],"1-50")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [gbdefinitionmappinginput]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[month].[month].[10],[gbdefinitionid].[gbdefinitionid].[gbd0003],[sgbdefinitionmappinginput].[sgbdefinitionmappinginput].[extra002])

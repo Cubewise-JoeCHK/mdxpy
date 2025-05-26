@@ -1,0 +1,5 @@
+SELECT
+{[M Sys Versioning Cube].[M Sys Versioning Cube].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+{[}Cubes].[}Cubes].[GB Definition Mapping Account],[}Cubes].[}Cubes].[GB Definition Mapping Input],[}Cubes].[}Cubes].[GB Definition Mapping Project n Dept],[}Cubes].[}Cubes].[GB Definition Mapping Revenue Flag],[}Cubes].[}Cubes].[GB Definition Mapping Revenue Flag Input],[}Cubes].[}Cubes].[GB Entry],[}Cubes].[}Cubes].[GB Entry Check SEM],[}Cubes].[}Cubes].[GB Reporting],[}Cubes].[}Cubes].[GB Reporting Detail],[}Cubes].[}Cubes].[GB Reporting Entry],[}Cubes].[}Cubes].[GB Reporting Entry Filter],[}Cubes].[}Cubes].[GB Staging]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [sysversioningcube]
+WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[unspecificyear],[month].[month].[00],[sysversioningmodule].[sysversioningmodule].[module1])

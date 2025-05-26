@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol GL Company Entry].[M Consol GL Company Entry].[Dr],[M Consol GL Company Entry].[M Consol GL Company Entry].[Cr],[M Consol GL Company Entry].[M Consol GL Company Entry].[Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Entry ID].[Entry ID].[All TB Upload].Children} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([segment1].[segment1],"All N Elements")} * {TM1SUBSETTOSET([segment2].[segment2],"All N Elements")} * {TM1SUBSETTOSET([segment3].[segment3],"All N Elements")} * {TM1SUBSETTOSET([segment4].[segment4],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompanyentry]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[periodtype].[periodtype].[current],[accountreport].[accountreport].[0000],[accountdisclosure].[accountdisclosure].[0000],[company].[company].[a100],[sconsolglcompanyentry].[sconsolglcompanyentry].[ec],[account].[account].[0000])

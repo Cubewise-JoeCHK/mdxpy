@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[M Consol Track Report Data Load].[M Consol Track Report Data Load].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {DRILLDOWNMEMBER({[Company].[Company].[All Companies List]}, {[Company].[Company].[All Companies List]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consoltrackreportdataload]
+WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[03],[datatype].[datatype].[jekingdee],[sconsoltrackreportdataload].[sconsoltrackreportdataload].[srcsystem],[lineitem].[lineitem].[0000])

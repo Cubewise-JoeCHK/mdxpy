@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {TM1SUBSETTOSET([company].[company],"List - All Entities")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {TM1SUBSETTOSET([segment1].[segment1],"List - All Teams")} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [consolglcompany]
+WHERE ([scenario].[scenario].[bud],[year].[year].[2022],[month].[month].[allmtd],[periodtype].[periodtype].[current],[intercompany].[intercompany].[allintercompanies],[segment2].[segment2].[allsegments],[account].[account].[allaccounts],[accountreport].[accountreport].[allaccountreports],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[0000],[sconsolglcompany].[sconsolglcompany].[ec],[mconsolglcompany].[mconsolglcompany].[amount])

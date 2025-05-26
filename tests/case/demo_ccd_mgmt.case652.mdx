@@ -1,0 +1,4 @@
+SELECT
+NON EMPTY {[}groups].[}groups].[admin],[}groups].[}groups].[securityadmin],[}groups].[}groups].[dataadmin]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY TM1SubsetAll([}Clients]) DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [}clientgroups]

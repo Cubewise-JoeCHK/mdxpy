@@ -1,0 +1,5 @@
+SELECT
+NON EMPTY {[Currency From].[Currency From].[NTD],[Currency From].[Currency From].[USD],[Currency From].[Currency From].[AUD],[Currency From].[Currency From].[SGD]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
+NON EMPTY {[Currency To].[Currency To].[NTD],[Currency To].[Currency To].[USD],[Currency To].[Currency To].[AUD],[Currency To].[Currency To].[SGD]} DIMENSION PROPERTIES MEMBER_NAME ON 1
+FROM [fxrate]
+WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[fxratetype].[fxratetype].[averagerate],[mfxrate].[mfxrate].[rate])
