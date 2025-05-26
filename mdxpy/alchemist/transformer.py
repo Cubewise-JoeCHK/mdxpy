@@ -59,11 +59,11 @@ class MDXTransformer(lark.Transformer):
             cube = data['cube'],
         )
         axes = {}
-        if data.get('row'):
-            axes.update({0: data['row']})
-        if data.get('column'):
-            axes.update({1: data['column']})
+        if row_data := data.get('row'):
+            axes.update({0: row_data})
+        if column_data := data.get('column'):
+            axes.update({1: column_data})
         builder.axes = axes
-        builder._where = where if (where:=data.get('where')) else MdxTuple.empty()
+        builder._where = where if (where := data.get('where')) else MdxTuple.empty()
         return builder
         
