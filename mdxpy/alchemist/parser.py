@@ -37,4 +37,3 @@ def parse_mdx(mdx: str) -> lark.Tree:
             f"Input: {mdx}\n"
         )
         raise Exception(f'{error_message}') from e
-    

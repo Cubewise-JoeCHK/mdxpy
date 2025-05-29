@@ -2,9 +2,15 @@ from mdxpy.mdx import *
 import lark
 
 class MDXTransformer(lark.Transformer):
+    def child(self, item):
+        return item[0].value
+    
+    def consolidation(self, item): 
+        return None
+    
     def name(self, item):
         # syntax : [ IDENTIFIER ] 
-        return item[1].value
+        return [i for i in item if isinstance(i, str)][1]
     
     def dimension(self, item):
         return ('dimension', item[0])
@@ -17,11 +23,14 @@ class MDXTransformer(lark.Transformer):
     
     def member(self, item): 
         data = {i[0]: i[1] for i in item if isinstance(i, tuple)}
-        return Member(
-            dimension=data['dimension'],
-            hierarchy=data.get('hierarchy', data['dimension']),
-            element=data['element']
-        )
+        try:
+            return Member(
+                dimension=data['dimension'],
+                hierarchy=data.get('hierarchy', data['dimension']),
+                element=data['element']
+            )
+        except Exception as e:
+            breakpoint()
     
     def mdx_tuple(self, item):
         return MdxTuple(
@@ -67,3 +76,8 @@ class MDXTransformer(lark.Transformer):
         builder._where = where if (where := data.get('where')) else MdxTuple.empty()
         return builder
         
+    def mdx_hierarchy_set(self, item):
+        return item
+
+    def tuples_set(self, item): 
+        return TuplesSet(item)      
