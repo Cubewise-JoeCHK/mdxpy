@@ -1,5 +1,0 @@
-SELECT
-{EXCEPT({EXCEPT({EXCEPT({EXCEPT({[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].Members},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Account Disclosure Name]})},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Account Report Name]})},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Currency]})},{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].[Company Name]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([lineitem].[lineitem],"1-500")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglgroupentryinput]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[periodtype].[periodtype].[ytd],[sconsolglgroupentryinput].[sconsolglgroupentryinput].[pa],[group].[group].[groupentry],[entryid].[entryid].[m001])

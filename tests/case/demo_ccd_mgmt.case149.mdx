@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Shares Market Price].[M Consol Shares Market Price].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([date].[date],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolsharesmarketprice]
-WHERE ([scenario].[scenario].[act],[company].[company].[p03])

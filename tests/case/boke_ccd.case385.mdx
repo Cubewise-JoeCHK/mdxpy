@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GLF SQFCI Report Major Key Missing].[M GLF SQFCI Report Major Key Missing].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([companyrd].[companyrd],"Sys Company 0 Short Name")} * {TM1SUBSETTOSET([segment1].[segment1],"Picklist All N")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glfsqfcireportmajorkeymissing]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[glftype].[glftype].[allglftype])

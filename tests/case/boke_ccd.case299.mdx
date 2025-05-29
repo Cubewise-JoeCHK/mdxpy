@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GB Entry Check].[M GB Entry Check].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[S GB Entry Check].[S GB Entry Check].Members} * {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([segment2].[segment2],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbentrycheckhr]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[month].[month].[12])

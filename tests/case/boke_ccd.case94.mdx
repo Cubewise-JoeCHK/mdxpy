@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol GL Company].[M Consol GL Company].[Amount(dollar)^Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1DRILLDOWNMEMBER({[Account Report].[Account Report].[All FSs]}, ALL, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[09],[periodtype].[periodtype].[ytd],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[company].[company].[a100],[segment4].[segment4].[allsegments],[segment3].[segment3].[allsegments],[accountdisclosure].[accountdisclosure].[alltbs],[sconsolglcompany].[sconsolglcompany].[ec],[intercompany].[intercompany].[allintercompanies],[account].[account].[allaccounts])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([mgbreporting].[mgbreporting],"All Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY { [Company].[Company].[All Companies List] } * {[Account].[Account].[All Accounts by Category]} * {[Segment 1].[Segment 1].[All Segments]} * {[Segment 2].[Segment 2].[All Segments]} * {[Intercompany].[Intercompany].[All Intercompanies]} * {[Account GB].[Account GB].[All Account GBs]} * {[Department GB].[Department GB].[All Department GBs]} * {[Project GB].[Project GB].[All Project GBs]} * {[S GB Reporting].[S GB Reporting].[All Data Sources]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbreporting]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[month].[month].[06],[group].[group].[(group)a000],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[mreference].[mreference].[baseperiod],[accountreport].[accountreport].[allaccountreports],[yearmonth].[yearmonth].[allyears])

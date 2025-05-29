@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETALL([M HR Expense].[M HR Expense])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {DRILLUPMEMBER({[Expense Type].[Expense Type].Members}, {[Expense Type].[Expense Type].[所有费用类别]})} * {[Employee Type].[Employee Type].[所有员工类型]} * {DRILLDOWNMEMBER({[Company].[Company].[All Companies List]}, {[Company].[Company].[All Companies List]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [hrexpense]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[segment2].[segment2].[allsegments],[shrexpense].[shrexpense].[base])

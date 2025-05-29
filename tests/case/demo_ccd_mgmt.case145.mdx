@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Rounding Check Report].[M Consol Rounding Check Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {DRILLUPMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLUPMEMBER({[Rounding Check Element].[Rounding Check Element].Members}, {[Rounding Check Element].[Rounding Check Element].[Comparison]})}, {[Rounding Check Element].[Rounding Check Element].[Comparison]})}, {[Rounding Check Element].[Rounding Check Element].[Children]})}, {[Rounding Check Element].[Rounding Check Element].[Children]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolroundingcheckreport]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[company].[company].[m03],[roundingcheckitem].[roundingcheckitem].[rc001],[roundingcheckcontent].[roundingcheckcontent].[001])

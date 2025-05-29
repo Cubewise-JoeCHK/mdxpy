@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GB Definition Mapping Input].[M GB Definition Mapping Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {EXCEPT({DRILLDOWNMEMBER({[Company].[Company].[All Companies List]}, {[Company].[Company].[All Companies List]})},{[Company].[Company].[All Companies List]})} * {EXCEPT({[Project GB].[Project GB].Members},{[Project GB].[Project GB].[All Project GBs]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbdefinitionmappingprojectndeptinput]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[segment1].[segment1].[0000],[departmentgb].[departmentgb].[gbbm0000],[sgbdefinitionmappinginput].[sgbdefinitionmappinginput].[extra002],[segment2].[segment2].[0000],[accountgb].[accountgb].[pl00])

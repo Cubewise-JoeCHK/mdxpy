@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol GL Company].[M Consol GL Company].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([accountreport].[accountreport],"All TB N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[periodtype].[periodtype].[ytd],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[alltbs],[sconsolglcompany].[sconsolglcompany].[alldatasourceslist],[company].[company].[a110],[account].[account].[2221.20])

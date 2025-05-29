@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([mconsolglcompanyentry].[mconsolglcompanyentry],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1FILTERBYLEVEL({TM1SUBSETALL([S Consol GL Company Entry].[S Consol GL Company Entry])}, 0)} * {TM1SUBSETTOSET([company].[company],"List - All Entities")} * {TM1FILTERBYLEVEL({TM1SUBSETALL([Account].[Account])}, 0)} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompanyentry]
-WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[periodtype].[periodtype].[ytd],[accountreport].[accountreport].[allaccountreports],[entryid].[entryid].[tbupload001],[lineitem].[lineitem].[alllineitems],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments])

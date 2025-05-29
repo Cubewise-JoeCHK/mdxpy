@@ -1,5 +1,0 @@
-SELECT
-{[Project GB Category].[Project GB Category].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{DRILLDOWNMEMBER({[Account GB].[Account GB].[All Account GBs]}, {[Account GB].[Account GB].[All Account GBs]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbdefinitionmappingrevenueflaginput]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[mgbdefinitionmapping].[mgbdefinitionmapping].[count])

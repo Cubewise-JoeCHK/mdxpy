@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[Line Item].[Line Item].[0001],[Line Item].[Line Item].[0002],[Line Item].[Line Item].[0003]} * {TM1SUBSETTOSET([accountreport].[accountreport],"Non-Current Assets")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].[Index 11]}, {[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].[Index 11]})}, {[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].[Index 11^At end of year]})}, {[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].[Index 11^At end of year^As restated]})}, {[M Consol Footnotes Line Item].[M Consol Footnotes Line Item].[Index 11^At end of year (Comprising)]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolfootnotescompanylineitem]
-WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[company].[company].[a01],[intercompany].[intercompany].[0000],[sconsolfootnotescompanylineitem].[sconsolfootnotescompanylineitem].[ccd])

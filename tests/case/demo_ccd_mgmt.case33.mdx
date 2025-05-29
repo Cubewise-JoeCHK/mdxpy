@@ -1,5 +1,0 @@
-SELECT
-{[S Consol EPS Shares].[S Consol EPS Shares].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{[M Consol EPS Shares].[M Consol EPS Shares].[Number issued],[M Consol EPS Shares].[M Consol EPS Shares].[vest date],[M Consol EPS Shares].[M Consol EPS Shares].[Weighted average amount to be recognised over the remainder of the vesting period],[M Consol EPS Shares].[M Consol EPS Shares].[no of option not yet vested],[M Consol EPS Shares].[M Consol EPS Shares].[adj exercised price]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolepsshares]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[12],[lineitem].[lineitem].[0000],[periodtype].[periodtype].[ytd],[company].[company].[p03],[sharestype].[sharestype].[option02])

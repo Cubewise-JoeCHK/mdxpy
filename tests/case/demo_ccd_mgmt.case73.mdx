@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([month].[month],"Month List Subset")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1FILTERBYLEVEL({TM1SUBSETALL([Account].[Account])}, 0)} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompanyentry]
-WHERE ([scenario].[scenario].[act],[year].[year].[2022],[periodtype].[periodtype].[current],[company].[company].[a01],[accountreport].[accountreport].[allaccountreports],[entryid].[entryid].[alltbupload],[lineitem].[lineitem].[alllineitems],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[sconsolglcompanyentry].[sconsolglcompanyentry].[ec],[mconsolglcompanyentry].[mconsolglcompanyentry].[amount])

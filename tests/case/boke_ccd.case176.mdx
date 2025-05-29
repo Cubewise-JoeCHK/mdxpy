@@ -1,5 +1,0 @@
-SELECT
-{[M Consol GL Group Entry Input].[M Consol GL Group Entry Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([lineitem].[lineitem],"1-100 w Total")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglgroupentryinput]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[periodtype].[periodtype].[ytd],[group].[group].[(group)a100],[entryid].[entryid].[m001],[sconsolglgroupentryinput].[sconsolglgroupentryinput].[elim])

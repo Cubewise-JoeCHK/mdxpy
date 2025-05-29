@@ -1,5 +1,0 @@
-SELECT
-{EXCEPT({EXCEPT({[M Consol EPS Shares].[M Consol EPS Shares].Members},{[M Consol EPS Shares].[M Consol EPS Shares].[Number of Days - by Movement]})},{[M Consol EPS Shares].[M Consol EPS Shares].[Weight - by Movement],[M Consol EPS Shares].[M Consol EPS Shares].[Weight - by Total Shares],[M Consol EPS Shares].[M Consol EPS Shares].[Shares Weighted - by Movement],[M Consol EPS Shares].[M Consol EPS Shares].[Shares Weighted - by Total Shares]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolepsshares]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[12],[periodtype].[periodtype].[ytd],[company].[company].[p03],[sharestype].[sharestype].[option02],[sconsolepsshares].[sconsolepsshares].[1sttranche])

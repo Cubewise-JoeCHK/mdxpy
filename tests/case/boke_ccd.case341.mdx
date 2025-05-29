@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GLF CSJS Man Hour Report].[M GLF CSJS Man Hour Report].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([glftypemajorkey].[glftypemajorkey],"Picklist All N GLJYLX009")} * {[Segment 1 CSJS].[Segment 1 CSJS].Members} * {[Company Select 1].[Company Select 1].Members} * {[Company Select 2].[Company Select 2].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glfcsjsmanhourreport]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[04],[glftype].[glftype].[gljylx009],[sglfcsjsmanhourreport].[sglfcsjsmanhourreport].[原始值])

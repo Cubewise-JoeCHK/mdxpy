@@ -1,5 +1,0 @@
-SELECT
-{[M Sys Workflow].[M Sys Workflow].[Step Close],[M Sys Workflow].[M Sys Workflow].[Step Lock],[M Sys Workflow].[M Sys Workflow].[Step Node Root],[M Sys Workflow].[M Sys Workflow].[Step Description],[M Sys Workflow].[M Sys Workflow].[Step Type],[M Sys Workflow].[M Sys Workflow].[Step Name],[M Sys Workflow].[M Sys Workflow].[Step App Review],[M Sys Workflow].[M Sys Workflow].[Step App Input]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{[Sys Workflow Step].[Sys Workflow Step].[00],[Sys Workflow Step].[Sys Workflow Step].[All Steps],[Sys Workflow Step].[Sys Workflow Step].[01],[Sys Workflow Step].[Sys Workflow Step].[02],[Sys Workflow Step].[Sys Workflow Step].[03],[Sys Workflow Step].[Sys Workflow Step].[04],[Sys Workflow Step].[Sys Workflow Step].[05],[Sys Workflow Step].[Sys Workflow Step].[06],[Sys Workflow Step].[Sys Workflow Step].[07],[Sys Workflow Step].[Sys Workflow Step].[08],[Sys Workflow Step].[Sys Workflow Step].[09],[Sys Workflow Step].[Sys Workflow Step].[10]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [sysworkflow]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[03],[sysworkflow].[sysworkflow].[allworkflows])

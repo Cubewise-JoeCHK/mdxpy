@@ -1,5 +1,0 @@
-SELECT
-{[M Consol Profile Shares].[M Consol Profile Shares].[Date],[M Consol Profile Shares].[M Consol Profile Shares].[Type of Change],[M Consol Profile Shares].[M Consol Profile Shares].[Shares Input]} * {[S Consol Profile Shares].[S Consol Profile Shares].[Base],[S Consol Profile Shares].[S Consol Profile Shares].[1st Tranche],[S Consol Profile Shares].[S Consol Profile Shares].[2nd Tranche],[S Consol Profile Shares].[S Consol Profile Shares].[3rd Tranche],[S Consol Profile Shares].[S Consol Profile Shares].[4th Tranche]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolprofileshares]
-WHERE ([scenario].[scenario].[act],[company].[company].[p03],[sharestype].[sharestype].[option01])

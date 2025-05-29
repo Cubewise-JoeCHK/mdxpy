@@ -1,5 +1,0 @@
-SELECT
-{[M Consol Tax Adjust Entry Input].[M Consol Tax Adjust Entry Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{[Entry ID].[Entry ID].Members} * {TM1SUBSETTOSET([jelineitem].[jelineitem],"4")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoltaxadjustentryinput]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[04],[company].[company].[a100])

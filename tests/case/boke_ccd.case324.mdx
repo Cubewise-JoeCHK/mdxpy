@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GB Reporting].[M GB Reporting].[Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {EXCEPT({DRILLDOWNMEMBER({[Company].[Company].[All Companies List]}, {[Company].[Company].[All Companies List]})},{[Company].[Company].[All Companies List]})} * {EXCEPT({DRILLDOWNMEMBER({[Voucher ID].[Voucher ID].[All Voucher IDs]}, {[Voucher ID].[Voucher ID].[All Voucher IDs]})},{[Voucher ID].[Voucher ID].[All Voucher IDs]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbreportingentry]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[01],[group].[group].[(group)a000],[sgbreporting].[sgbreporting].[base],[lineitem].[lineitem].[alllineitems])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([currencyfrom].[currencyfrom],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([date].[date],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [fxratedaily]
-WHERE ([scenario].[scenario].[act],[mfxratedaily].[mfxratedaily].[rate],[fxratetype].[fxratetype].[spotrate],[currencyto].[currencyto].[usd])

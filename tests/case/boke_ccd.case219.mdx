@@ -1,5 +1,0 @@
-SELECT
-{[Group].[Group].[Group Entry],[Group].[Group].[All Groups List^(Group) A100]} * {[M Consol JE Group].[M Consol JE Group].[kmdm],[M Consol JE Group].[M Consol JE Group].[kmmc],[M Consol JE Group].[M Consol JE Group].[ECT Amount],[M Consol JE Group].[M Consol JE Group].[PCT Amount],[M Consol JE Group].[M Consol JE Group].[CA Amount],[M Consol JE Group].[M Consol JE Group].[Elim Amount],[M Consol JE Group].[M Consol JE Group].[PA Amount],[M Consol JE Group].[M Consol JE Group].[Consol Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[S Consol JE Group].[S Consol JE Group].[All Kingdee Datasources^EC Kingdee],[S Consol JE Group].[S Consol JE Group].[All Kingdee Datasources^ECC Kingdee],[S Consol JE Group].[S Consol JE Group].[All Kingdee Datasources^EC-Annual Kingdee],[S Consol JE Group].[S Consol JE Group].[CCD Entry]} * {TM1SUBSETTOSET([jelineitem].[jelineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoljegroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[company].[company].[a112],[jeid].[jeid].[0009])

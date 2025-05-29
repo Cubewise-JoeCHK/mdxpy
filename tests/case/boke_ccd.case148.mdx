@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {DRILLDOWNMEMBER({[M Reference].[M Reference].[LM],[M Reference].[M Reference].[MoM],[M Reference].[M Reference].[MoM (%)],[M Reference].[M Reference].[LM^Base Period]}, {[M Reference].[M Reference].[LM]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {EXCEPT({TM1DRILLDOWNMEMBER({[Account Report].[Account Report].[All Revenue Types]}, ALL, RECURSIVE )},{[Account Report].[Account Report].[All Revenue Types]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompanyreporting]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[periodtype].[periodtype].[current],[mconsolglcompany].[mconsolglcompany].[amount],[company].[company].[a110],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[alltbs],[sconsolglcompany].[sconsolglcompany].[ect],[account].[account].[6051])

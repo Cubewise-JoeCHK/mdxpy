@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1DRILLDOWNMEMBER({[S Consol GL Group].[S Consol GL Group].[PT]}, {[S Consol GL Group].[S Consol GL Group].[PT]}, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Elements")} * {[Account].[Account].[(CTA Calc)],[Account].[Account].[All Accounts^21800]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglgroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[periodtype].[periodtype].[ytd],[group].[group].[(group)e12],[accountreport].[accountreport].[0000],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[0000],[mconsolglgroup].[mconsolglgroup].[amount])

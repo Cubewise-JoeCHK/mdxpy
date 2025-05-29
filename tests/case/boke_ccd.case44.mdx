@@ -1,5 +1,0 @@
-SELECT
-{[M Consol Definition Intercompany Allocation].[M Consol Definition Intercompany Allocation].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{EXCEPT({[Line Item].[Line Item].[All Line Items],[Line Item].[Line Item].[0001],[Line Item].[Line Item].[0002],[Line Item].[Line Item].[0003],[Line Item].[Line Item].[0004],[Line Item].[Line Item].[0005],[Line Item].[Line Item].[0006],[Line Item].[Line Item].[0007],[Line Item].[Line Item].[0008],[Line Item].[Line Item].[0009],[Line Item].[Line Item].[0010]},{[Line Item].[Line Item].[All Line Items]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitionintercompanyallocation]
-WHERE ([year].[year].[2021],[month].[month].[01],[consolintercompanytransactiontype].[consolintercompanytransactiontype].[商务招待分摊])

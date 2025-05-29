@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol JE Group].[M Consol JE Group].[ECT Amount],[M Consol JE Group].[M Consol JE Group].[PCT Amount],[M Consol JE Group].[M Consol JE Group].[CA Amount],[M Consol JE Group].[M Consol JE Group].[Elim Amount],[M Consol JE Group].[M Consol JE Group].[PA Amount]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Elements")} * {[JE ID].[JE ID].[All IDs]} * {[JE Line Item].[JE Line Item].[All Line Items]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoljegroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[group].[group].[(group)a000],[sconsoljegroup].[sconsoljegroup].[eckingdee])

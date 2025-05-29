@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Definition Group].[M Consol Definition Group].[Share Holding Consol Point],[M Consol Definition Group].[M Consol Definition Group].[Share Holding Extra Elim Point]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([group].[group],"All N Elements")} * {TM1SUBSETTOSET([company].[company],"All N Companies")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitiongroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[02])

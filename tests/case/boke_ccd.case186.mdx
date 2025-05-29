@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([sconsolglgroup].[sconsolglgroup],"Stage Report C")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1DRILLDOWNMEMBER({[Company Reporting].[Company Reporting].[(Group) A100.ACT.2024.05]}, ALL, RECURSIVE )} * {TM1SUBSETTOSET([segment1].[segment1],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglgroupreporting]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[accountreport].[accountreport].[alltbs],[periodtype].[periodtype].[ytd],[accountdisclosure].[accountdisclosure].[0000],[intercompany].[intercompany].[bkks0109],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[account].[account].[6001.02],[mreference].[mreference].[baseperiod],[mconsolglgroup].[mconsolglgroup].[amount],[reportperspective].[reportperspective].[drillton],[group].[group].[(group)a100])

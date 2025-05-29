@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GLF CSJS Allocation Report Rollout].[M GLF CSJS Allocation Report Rollout].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([yearmonth].[yearmonth],"All N Elements")} * {TM1SUBSETTOSET([glftypemajorkey].[glftypemajorkey],"Picklist All N GLJYLX009")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glfcsjsallocationreportrollout]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[04],[companyselect1].[companyselect1].[a107],[glftype].[glftype].[gljylx009],[sglfcsjsallocationreportrollout].[sglfcsjsallocationreportrollout].[原始值])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Definition Elimination].[M Consol Definition Elimination].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([intercompany].[intercompany],"All C Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitionelimination]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[03],[group].[group].[(group)a135],[eliminationtype].[eliminationtype].[et019],[company].[company].[allcompanieslist],[account].[account].[allaccounts],[segmentcombination].[segmentcombination].[allsegmentcombinations])

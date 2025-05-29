@@ -1,5 +1,0 @@
-SELECT
-{EXCEPT({[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].Members},{[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Segment 1],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Segment 2],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Segment 3],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Segment 4],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Account Report ID],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Account Report Name],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Account Disclosure ID],[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].[Account Disclosure Name]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[Line Item].[Line Item].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompanyentryinput]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[periodtype].[periodtype].[current],[company].[company].[m02],[entryid].[entryid].[tbupload001],[sconsolglcompanyentryinput].[sconsolglcompanyentryinput].[ec])

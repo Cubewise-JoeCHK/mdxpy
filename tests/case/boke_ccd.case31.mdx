@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Definition Currency Type].[M Consol Definition Currency Type].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([account].[account],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitioncurrencytype]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[accountreport].[accountreport].[0000],[accountdisclosure].[accountdisclosure].[0000])

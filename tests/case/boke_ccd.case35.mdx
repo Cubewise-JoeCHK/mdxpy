@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([mconsoldefinitioneliminationinput].[mconsoldefinitioneliminationinput],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([eliminationtype].[eliminationtype],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitioneliminationstaging]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[company].[company].[a152],[group].[group].[(group)a100])

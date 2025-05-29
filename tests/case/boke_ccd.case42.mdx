@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Definition Group Reporting].[M Consol Definition Group Reporting].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {DRILLUPMEMBER({DRILLUPMEMBER({[Company Reporting].[Company Reporting].Members}, {[Company Reporting].[Company Reporting].[All Singles]})}, {[Company Reporting].[Company Reporting].[(Group) BKKS (Mgmt).ACT.2024.05]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitiongroupreporting]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[group].[group].[(group)a100])

@@ -1,5 +1,0 @@
-SELECT
-{[S Consol GL Group].[EC],[S Consol GL Group].[ECA],[S Consol GL Group].[ECT],[S Consol GL Group].[PC],[S Consol GL Group].[PCA],[S Consol GL Group].[PCT],[S Consol GL Group].[Prop],[S Consol GL Group].[Elim],[S Consol GL Group].[Contri]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[Company].[Company].[All Children]} * {DRILLDOWNMEMBER({[Account].[Account].[000]}, {[Account].[Account].[000]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglgroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[group].[group].[(group)p03],[intercompany].[intercompany].[0000],[segment1].[segment1].[0000],[segment2].[segment2].[0000],[segment3].[segment3].[0000],[segment4].[segment4].[0000],[accountreport].[accountreport].[amountduetodirectors/shareholders],[accountdisclosure].[accountdisclosure].[allaccountdisclosures],[mconsolglgroup].[mconsolglgroup].[amount])

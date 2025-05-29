@@ -1,5 +1,0 @@
-SELECT
-{[M Consol EPS Shares].[M Consol EPS Shares].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolepsshares]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[12],[periodtype].[periodtype].[ytd],[company].[company].[p03],[sharestype].[sharestype].[basicshares],[sconsolepsshares].[sconsolepsshares].[base])

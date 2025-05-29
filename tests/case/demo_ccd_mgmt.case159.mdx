@@ -1,5 +1,0 @@
-SELECT
-{TM1SUBSETTOSET([mfxrate].[mfxrate],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{[Currency To].[Currency To].Members} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [fxrate]
-WHERE ([scenario].[scenario].[act],[year].[year].[2020],[month].[month].[01],[fxratetype].[fxratetype].[averagerate],[currencyfrom].[currencyfrom].[aed])

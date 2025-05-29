@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Definition CF Mapping].[M Consol Definition CF Mapping].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([accountreport].[accountreport],"All N Elements")} * {TM1SUBSETTOSET([accountdisclosure].[accountdisclosure],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitioncfmapping]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[company].[company].[companyentry],[rule].[rule].[0001])

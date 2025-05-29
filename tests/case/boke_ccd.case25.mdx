@@ -1,5 +1,0 @@
-SELECT
-{[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Data Source],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Select Account],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Data Type],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[JE or not],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Weight],[M Consol Definition CIT Adjust Calc].[M Consol Definition CIT Adjust Calc].[Note]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{DRILLDOWNMEMBER({DRILLUPMEMBER({DRILLUPMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({TM1SubsetToSet([Adjust Item].[Adjust Item],"取数主表")}, {[Adjust Item].[Adjust Item].[纳税调增-对被投资企业分回的投资收益]})}, {[Adjust Item].[Adjust Item].[纳税调增-业务招待费]})}, {[Adjust Item].[Adjust Item].[纳税调增-业务招待费]})}, {[Adjust Item].[Adjust Item].[二、扣除类调整项目]})}, {[Adjust Item].[Adjust Item].[二、扣除类调整项目]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitioncitadjustcalc]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[06],[company].[company].[0000])

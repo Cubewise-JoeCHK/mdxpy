@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([sconsolgleliminationreconciliation].[sconsolgleliminationreconciliation],"All N Elements")} * {[M Consol GL Elimination Reconciliation].[M Consol GL Elimination Reconciliation].[Amount - Current]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([eliminationtype].[eliminationtype],"All N Elements")} * {TM1SUBSETTOSET([intercompanycategory].[intercompanycategory],"All N Elements")} * {TM1SUBSETTOSET([account].[account],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolgleliminationreconciliation]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[09],[currency].[currency].[lcy],[intercompany].[intercompany].[allintercompanies],[segment3].[segment3].[allsegments],[segment1].[segment1].[allsegments],[segment2].[segment2].[allsegments],[segment4].[segment4].[allsegments],[company].[company].[a100])

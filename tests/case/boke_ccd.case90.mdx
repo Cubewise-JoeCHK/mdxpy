@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol GL Company].[M Consol GL Company].[OB],[M Consol GL Company].[M Consol GL Company].[Dr],[M Consol GL Company].[M Consol GL Company].[Cr],[M Consol GL Company].[M Consol GL Company].[CB]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Companies")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[12],[periodtype].[periodtype].[ytd],[segment1].[segment1].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[accountdisclosure].[accountdisclosure].[0000],[sconsolglcompany].[sconsolglcompany].[ec],[segment2].[segment2].[allsegments],[accountreport].[accountreport].[fs-001],[account].[account].[allaccounts],[intercompany].[intercompany].[allintercompanies])

@@ -1,5 +1,0 @@
-SELECT
-{TM1SUBSETALL([M GLF Unify BPM Output Data Payment Entry].[M GLF Unify BPM Output Data Payment Entry])} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([companyselect2].[companyselect2],"All N Companies")} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([yearmonth].[yearmonth],"All N Elements")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} * {TM1SUBSETTOSET([glfdatatype].[glfdatatype],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glfunifybpmoutputdatapaymententry]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[01],[company].[company].[a100],[glftype].[glftype].[wbcbft001])

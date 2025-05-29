@@ -1,5 +1,0 @@
-SELECT
-{TM1SUBSETTOSET([mconsoldefinitionadjustentry].[mconsoldefinitionadjustentry],"调整分录设定")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([month].[month],"Default")} * {TM1SUBSETTOSET([entryid].[entryid],"单体调整配置")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitionadjustentry]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[company].[company].[0000])

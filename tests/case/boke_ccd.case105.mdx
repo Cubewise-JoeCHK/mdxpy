@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1ToggleDrillState( DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[Account].[Account].[6001],[Account].[Account].[6051]} * {TM1SUBSETTOSET([intercompany].[intercompany],"All N Elements")} * {TM1SUBSETTOSET([segment1].[segment1],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[company].[company].[a100],[periodtype].[periodtype].[current],[segment2].[segment2].[allsegments],[segment3].[segment3].[allsegments],[segment4].[segment4].[allsegments],[sconsolglcompany].[sconsolglcompany].[ec],[accountdisclosure].[accountdisclosure].[alltbs],[mconsolglcompany].[mconsolglcompany].[amount],[accountreport].[accountreport].[alltbs])

@@ -1,5 +1,0 @@
-SELECT
-{[M Consol GL Company Entry Input].[M Consol GL Company Entry Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {EXCEPT({DRILLDOWNMEMBER({[Entry ID].[Entry ID].[All TB Upload]}, {[Entry ID].[Entry ID].[All TB Upload]})},{[Entry ID].[Entry ID].[All TB Upload]})} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompanyentryinput]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[periodtype].[periodtype].[ytd],[company].[company].[a100],[sconsolglcompanyentryinput].[sconsolglcompanyentryinput].[ec])

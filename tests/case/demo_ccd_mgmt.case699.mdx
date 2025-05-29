@@ -1,5 +1,0 @@
-SELECT
-{[}statsstatsbycube].[}statsstatsbycube].[totalmemoryused],[}statsstatsbycube].[}statsstatsbycube].[memoryusedforinputdata],[}statsstatsbycube].[}statsstatsbycube].[memoryusedforcalculations],[}statsstatsbycube].[}statsstatsbycube].[memoryusedforfeeders],[}statsstatsbycube].[}statsstatsbycube].[memoryusedforviews],[}statsstatsbycube].[}statsstatsbycube].[numberofstoredviews],[}statsstatsbycube].[}statsstatsbycube].[numberofstoredcalculatedcells],[}statsstatsbycube].[}statsstatsbycube].[numberofpopulatedstringcells],[}statsstatsbycube].[}statsstatsbycube].[numberofpopulatednumericcells],[}statsstatsbycube].[}statsstatsbycube].[numberoffedcells]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-TM1SubsetAll([}PerfCubes]) DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [}statsbycube]
-WHERE ([}timeintervals].[}timeintervals].[latest])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GB Entry Check].[M GB Entry Check].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {EXCEPT({[GLF PA ID].[GLF PA ID].Members},{[GLF PA ID].[GLF PA ID].[All GLF PA IDs]})} * {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} * {[S GB Entry Check].[S GB Entry Check].[SYSJ GB],[S GB Entry Check].[S GB Entry Check].[SYSJ FB],[S GB Entry Check].[S GB Entry Check].[SYZGCX GB],[S GB Entry Check].[S GB Entry Check].[SYZGCX FB],[S GB Entry Check].[S GB Entry Check].[SYSJ],[S GB Entry Check].[S GB Entry Check].[SYZGCX],[S GB Entry Check].[S GB Entry Check].[BYZG]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbentrycheckglffwq]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[02])

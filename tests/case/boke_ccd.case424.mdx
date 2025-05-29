@@ -1,5 +1,0 @@
-SELECT
-{[M GLF Unify Financial Stage Data].[M GLF Unify Financial Stage Data].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[GLF Data Type].[GLF Data Type].[暂估冲销],[GLF Data Type].[GLF Data Type].[实际],[GLF Data Type].[GLF Data Type].[暂估]} * {TM1SUBSETTOSET([}apqclients].[}apqclients],"All N Elements")} * {TM1SUBSETTOSET([glfsysoutputdataid].[glfsysoutputdataid],"List 0 Level")} * {TM1SUBSETTOSET([lineitem].[lineitem],"1-200")} * {TM1SUBSETTOSET([yearmonth].[yearmonth],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glfunifyfinancialstagedata]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[11],[glfoutputdatatype].[glfoutputdatatype].[手工上传],[glfsysoutputdatatype].[glfsysoutputdatatype].[payment],[glftype].[glftype].[gljylx001])

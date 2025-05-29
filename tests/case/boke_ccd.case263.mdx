@@ -1,5 +1,0 @@
-SELECT
-{[M GB Definition Mapping Input].[M GB Definition Mapping Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([lineitem].[lineitem],"1-50")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbdefinitionmappinginput]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[06],[gbdefinitionid].[gbdefinitionid].[gbd0001],[sgbdefinitionmappinginput].[sgbdefinitionmappinginput].[base])

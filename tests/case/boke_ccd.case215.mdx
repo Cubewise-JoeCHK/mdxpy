@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol JE Error Record].[M Consol JE Error Record].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[S Consol JE Company].[S Consol JE Company].[EC^EC Kingdee]} * {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoljeerrorrecord]
-WHERE ([year].[year].[2023],[month].[month].[12],[company].[company].[a100],[errortype].[errortype].[et10p01])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol Data Check].[M Consol Data Check].[Compare Target],[M Consol Data Check].[M Consol Data Check].[ECT]} * {[S Consol Data Check].[S Consol Data Check].[Check Result^Upload],[S Consol Data Check].[S Consol Data Check].[Check Result^Sys],[S Consol Data Check].[S Consol Data Check].[Check Result]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([lineitem].[lineitem],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldatacheck]
-WHERE ([year].[year].[2023],[month].[month].[09])

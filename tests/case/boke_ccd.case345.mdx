@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GLF FSF Input].[M GLF FSF Input].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[GLF FSF Vendor].[GLF FSF Vendor].Members} * {DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({[Year Month].[Year Month].[All Quarters]}, {[Year Month].[Year Month].[All Quarters]})}, {[Year Month].[Year Month].[2024 Q]})}, {[Year Month].[Year Month].[2024 Q^2024-Q1]})}, {[Year Month].[Year Month].[2025 Q]})}, {[Year Month].[Year Month].[2025 Q^2025-Q1]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glffsfinputallocationbase]
-WHERE ([scenario].[scenario].[act],[company].[company].[allcompanieslist],[glftype].[glftype].[allglftype],[glfdatatype].[glfdatatype].[实际],[year].[year].[2025],[month].[month].[03])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[logincount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[sessiontimehrs],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[sessiontime],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[logcount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[waitingcount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[runningcount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[committingcount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[rollingbackcount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[userwaitingcount],[}apqpulseuserloginmeasure].[}apqpulseuserloginmeasure].[lastlogin]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[}apqclients].[}apqclients].[admin],[}apqclients].[}apqclients].[defaultuser]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [}apqpulseuserlogin]
-WHERE ([}apqtimeyear].[}apqtimeyear].[2025],[}apqtimedayinyear].[}apqtimedayinyear].[m05],[}apqpulseservername].[}apqpulseservername].[totalapqpulseservername],[}apqpulseservicename].[}apqpulseservicename].[totalapqpulseservicename])

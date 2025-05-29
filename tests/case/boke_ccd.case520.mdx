@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M YS Report].[M YS Report].[Amount CNY]} * {TM1SUBSETTOSET([month].[month],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[Project GB].[Project GB].[XMM0000]} * {[Department GB].[Department GB].[BMM0000]} * {[S YS Report].[S YS Report].[财务类]} * {[YS GLF Type].[YS GLF Type].[Type002]} * {[Account YS].[Account YS].[YS00]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [ysreport]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2023],[company].[company].[a100],[account].[account].[6405.06.00.00],[mreference].[mreference].[baseperiod])

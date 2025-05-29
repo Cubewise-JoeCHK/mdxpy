@@ -1,5 +1,0 @@
-SELECT
-{TM1SUBSETTOSET([entryid].[entryid],"重分类调整")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([company_ra].[company_ra],"All N Companies")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitionreclassficationvalidcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[09],[rule].[rule].[0001],[mconsoldefinitionreclassficationvalidcompany].[mconsoldefinitionreclassficationvalidcompany].[validflag])

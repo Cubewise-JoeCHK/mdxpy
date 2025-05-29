@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {DRILLDOWNMEMBER({[Account Report].[Account Report].[FS-001]}, {[Account Report].[Account Report].[FS-001]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({DRILLDOWNMEMBER({[Account Disclosure].[Account Disclosure].[CF_Check],[Account Disclosure].[Account Disclosure].[CF_MOV_Per Book],[Account Disclosure].[Account Disclosure].[CF_Mov_Per Adj]}, {[Account Disclosure].[Account Disclosure].[CF_Mov_Per Adj]})}, {[Account Disclosure].[Account Disclosure].[CF_MOV_Per Book]})}, {[Account Disclosure].[Account Disclosure].[CF_CFTTL]})}, {[Account Disclosure].[Account Disclosure].[CF_CITTL]})}, {[Account Disclosure].[Account Disclosure].[CF_COTTL]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolcfcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[mconsolcfcompany].[mconsolcfcompany].[amount],[company].[company].[e12],[sconsolcfcompany].[sconsolcfcompany].[ect])

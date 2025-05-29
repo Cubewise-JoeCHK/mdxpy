@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[Balance Sign],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Description],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Account],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Adjust Item],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Adjust Measure],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Adjust Weight],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Adjust Weight 2],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Cr],[M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc].[JE Dr]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([month].[month],"All N Elements")} * {TM1SUBSETTOSET([adjustitem].[adjustitem],"All N Elements")} * {TM1FILTERBYLEVEL({TM1SUBSETALL([S Consol CIT Adjust Calc].[S Consol CIT Adjust Calc])}, 0)} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolcitadjustcalc]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[company].[company].[a100])

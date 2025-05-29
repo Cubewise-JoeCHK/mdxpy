@@ -1,5 +1,0 @@
-SELECT
-{DRILLDOWNMEMBER({[S Consol CF Group].[S Consol CF Group].[ECT],[S Consol CF Group].[S Consol CF Group].[Consol]}, {[S Consol CF Group].[S Consol CF Group].[Consol]})} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1DRILLDOWNMEMBER({[Account Disclosure].[Account Disclosure].[CF_Check]}, ALL, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolcfgroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[periodtype].[periodtype].[ytd],[group].[group].[(group)a107],[company].[company].[a101],[accountreport].[accountreport].[fs-001],[mconsolcfgroup].[mconsolcfgroup].[amount],[cfmethod].[cfmethod].[singletoconsol])

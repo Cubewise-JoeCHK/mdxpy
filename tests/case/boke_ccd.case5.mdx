@@ -1,5 +1,0 @@
-SELECT
-{TM1SubsetToSet([M Consol CIT Adjust Calc].[M Consol CIT Adjust Calc], "确认金额" )} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([adjustitem].[adjustitem],"取数主表")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolcitadjustcalc]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[05],[company].[company].[a100],[sconsolcitadjustcalc].[sconsolcitadjustcalc].[base])

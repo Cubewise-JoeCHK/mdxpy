@@ -1,5 +1,0 @@
-SELECT
-{[timedeviation].[timedeviation].[t],[timedeviation].[timedeviation].[t+1],[timedeviation].[timedeviation].[t+2],[timedeviation].[timedeviation].[t+3],[timedeviation].[timedeviation].[t-1],[timedeviation].[timedeviation].[t-2],[timedeviation].[timedeviation].[t-3],[timedeviation].[timedeviation].[y+1],[timedeviation].[timedeviation].[y+2],[timedeviation].[timedeviation].[y-1],[timedeviation].[timedeviation].[y-2]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([date].[date],"Sys Element Y")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [systimeattribute]
-WHERE ([msystimeattribute].[msystimeattribute].[yyyy-mm-dd])

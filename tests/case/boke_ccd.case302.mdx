@@ -1,5 +1,0 @@
-SELECT
-{TM1SUBSETTOSET([mgbentrycheck].[mgbentrycheck],"GB Entry Check Note Report")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[S GB Entry Check].[S GB Entry Check].[AdjNoteIncome],[S GB Entry Check].[S GB Entry Check].[AdjNoteExpense]} * {[GB Adj Note ID].[GB Adj Note ID].Members} * {TM1SUBSETTOSET([lineitem].[lineitem],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbentrychecknote]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[02])

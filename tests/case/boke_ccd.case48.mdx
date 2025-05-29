@@ -1,5 +1,0 @@
-SELECT
-{[M Consol Definition Reclassfication].[M Consol Definition Reclassfication].[Description],[M Consol Definition Reclassfication].[M Consol Definition Reclassfication].[Effective],[M Consol Definition Reclassfication].[M Consol Definition Reclassfication].[Weight]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1SUBSETTOSET([rule].[rule],"5")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consoldefinitionreclassfication]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[company].[company].[0000],[updaterecord].[updaterecord].[updateinput],[entryid].[entryid].[ra001],[reclassficationsegment].[reclassficationsegment].[criteria])

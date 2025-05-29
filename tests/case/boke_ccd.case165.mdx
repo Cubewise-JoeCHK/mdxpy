@@ -1,5 +1,0 @@
-SELECT
-{[Account Report].[Account Report].[All TBs],[Account Report].[Account Report].[S001]} * {[S Consol GL Group].[S Consol GL Group].[ECT^EC],[S Consol GL Group].[S Consol GL Group].[PCT^PC]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1FILTERBYLEVEL({TM1FILTERBYPATTERN({TM1SUBSETALL([Account].[Account])},"4*"/*ALIAS*/,"Code and Desc")}, 0)} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglgroup]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[05],[periodtype].[periodtype].[ytd],[segment4].[segment4].[allsegments],[group].[group].[(group)a100],[mconsolglgroup].[mconsolglgroup].[amount],[accountdisclosure].[accountdisclosure].[alltbs],[company].[company].[a104],[segment3].[segment3].[allsegments],[segment2].[segment2].[allsegments],[intercompany].[intercompany].[allintercompanies],[segment1].[segment1].[allsegments])

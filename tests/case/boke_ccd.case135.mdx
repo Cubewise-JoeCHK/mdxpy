@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {TM1SUBSETTOSET([mconsolglcompanyentryinput].[mconsolglcompanyentryinput],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([lineitem].[lineitem],"1-500")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompanyentryinput]
-WHERE ([scenario].[scenario].[act],[year].[year].[2023],[month].[month].[12],[periodtype].[periodtype].[ytd],[company].[company].[a101],[entryid].[entryid].[tbupload001],[sconsolglcompanyentryinput].[sconsolglcompanyentryinput].[ec-tbinput])

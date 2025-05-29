@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GB Definition Mapping].[M GB Definition Mapping].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([accountgb].[accountgb],"All N Elements")} * {TM1SUBSETTOSET([company].[company],"All N Companies")} * {TM1SUBSETTOSET([segment2].[segment2],"All N Elements")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [gbdefinitionmappingprojectndept]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[06],[segment1].[segment1].[0000])

@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M HR Expense].[M HR Expense].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {[Segment 2].[Segment 2].[All Segments]} * {DRILLDOWNMEMBER({[Project GB].[Project GB].[All Project GBs]}, {[Project GB].[Project GB].[All Project GBs]})} * {[Department GB].[Department GB].[All Department GBs]} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [hrexpensebyprojectgb]
-WHERE ([scenario].[scenario].[act],[version].[version].[wip],[year].[year].[2025],[month].[month].[03],[company].[company].[allcompanieslist],[employeetype].[employeetype].[所有员工类型],[shrexpense].[shrexpense].[base])

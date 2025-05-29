@@ -1,5 +1,0 @@
-SELECT
-{[msysmenu].[msysmenu].[count-pageenabled],[msysmenu].[msysmenu].[pagestatus],[msysmenu].[msysmenu].[pagestyle],[msysmenu].[msysmenu].[pagemaxrow],[msysmenu].[msysmenu].[pagemaxcolumn],[msysmenu].[msysmenu].[pagetitle],[msysmenu].[msysmenu].[pagedescription],[msysmenu].[msysmenu].[pagepath],[msysmenu].[msysmenu].[pagemessage],[msysmenu].[msysmenu].[pagesheetname],[msysmenu].[msysmenu].[pageurl],[msysmenu].[msysmenu].[pageurlparentpage],[msysmenu].[msysmenu].[buttontype],[msysmenu].[msysmenu].[buttonid],[msysmenu].[msysmenu].[buttonname],[msysmenu].[msysmenu].[buttonhyperlink],[msysmenu].[msysmenu].[feeder]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY TM1SubsetAll([Sys Menu Page]) DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [sysmenu]
-WHERE ([sysmenuprofile].[sysmenuprofile].[profile1],[sysmenupagecolumn].[sysmenupagecolumn].[defaultcolumn],[sysmenupagerow].[sysmenupagerow].[defaultrow])

@@ -1,5 +1,0 @@
-SELECT
-{TM1DRILLDOWNMEMBER({[Account].[Account].[Non-Current Assets - Cost/Valuation],[Account].[Account].[Non-Current Assets - Depreciation]}, {[Account].[Account].[Non-Current Assets - Cost/Valuation],[Account].[Account].[Non-Current Assets - Depreciation]}, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{TM1DRILLDOWNMEMBER({[Account Disclosure].[Account Disclosure].[Non-Current Assets - Cost/Valuation]}, {[Account Disclosure].[Account Disclosure].[Non-Current Assets - Cost/Valuation]}, RECURSIVE )} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglcompany]
-WHERE ([scenario].[scenario].[act],[year].[year].[2022],[month].[month].[12],[periodtype].[periodtype].[ytd],[company].[company].[e12],[intercompany].[intercompany].[0000],[segment1].[segment1].[0000],[segment2].[segment2].[0000],[segment3].[segment3].[0000],[segment4].[segment4].[0000],[accountreport].[accountreport].[0000],[sconsolglcompany].[sconsolglcompany].[ec],[mconsolglcompany].[mconsolglcompany].[amount])

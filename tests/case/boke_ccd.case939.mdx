@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[}apqprocesstoobjectreferencemeasure].[}apqprocesstoobjectreferencemeasure].[isused],[}apqprocesstoobjectreferencemeasure].[}apqprocesstoobjectreferencemeasure].[processstarttime],[}apqprocesstoobjectreferencemeasure].[}apqprocesstoobjectreferencemeasure].[processfinishtime]} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([}apqtm1objects].[}apqtm1objects],"All Chores")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [}apqprocesstoobjectreference]
-WHERE ([}apqtm1objecttype].[}apqtm1objecttype].[chore],[}apqprocesses].[}apqprocesses].[}apq.dim.sub.standardsubsets.update])

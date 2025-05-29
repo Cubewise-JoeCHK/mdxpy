@@ -1,5 +1,0 @@
-SELECT
-{[S Consol GL Investment].[S Consol GL Investment].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-{DRILLUPMEMBER({DRILLUPMEMBER({[Investment Account].[Investment Account].Members}, {[Investment Account].[Investment Account].[CoA (CTA)]})}, {[Investment Account].[Investment Account].[CoA]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [consolglinvestment]
-WHERE ([scenario].[scenario].[act],[year].[year].[2021],[month].[month].[01],[company].[company].[p03],[investmentobject].[investmentobject].[c017],[mconsolglinvestment].[mconsolglinvestment].[amount])

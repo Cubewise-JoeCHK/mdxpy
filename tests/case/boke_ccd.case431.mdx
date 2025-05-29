@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[M GLF Unify Output Data].[M GLF Unify Output Data].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([}apqclients].[}apqclients],"All N Elements")} * {TM1SUBSETTOSET([glftypemajorkey].[glftypemajorkey],"Picklist All N")} * {[GLF Output Data Type].[GLF Output Data Type].Members} * {EXCEPT({[Line Item].[Line Item].Members},{[Line Item].[Line Item].[All Line Items]})} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [glfunifyoutputdatarollout]
-WHERE ([scenario].[scenario].[act],[year].[year].[2025],[month].[month].[04],[glftype].[glftype].[gljylx008])

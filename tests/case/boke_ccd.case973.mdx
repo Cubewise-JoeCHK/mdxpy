@@ -1,5 +1,0 @@
-SELECT
-NON EMPTY {[}APQ Security Manage Object Access Measure].[}APQ Security Manage Object Access Measure].Members} DIMENSION PROPERTIES MEMBER_NAME ON 0,
-NON EMPTY {TM1SUBSETTOSET([}apqsecuritypermissionindex].[}apqsecuritypermissionindex],"Default")} DIMENSION PROPERTIES MEMBER_NAME ON 1
-FROM [}apqsecuritymanageobjectaccess]
-WHERE ([}apqgroups].[}apqgroups].[d:c:(group)b103],[}apqtm1objecttype].[}apqtm1objecttype].[cube],[}apqtm1objects].[}apqtm1objects].[totalapqtm1objects])
